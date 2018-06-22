@@ -41,6 +41,8 @@ drift.load('usbic7ikt24x');
 		color: white; font: 70px Verdana; font-weight: bold;
 		position: relative;
 		top: 170px;
+		animation-duration: 0.5s;
+		animation-name: bounce;
 	}
 	.lastname{
 		height: auto;
@@ -48,6 +50,8 @@ drift.load('usbic7ikt24x');
 		color: white; font: 70px Verdana; font-weight: bold;
 		position: relative;
 		top: 125px;
+		animation-duration: 0.5s;
+		animation-name: bounce;
 	}
 	.quote{
 		height: auto;
@@ -55,16 +59,34 @@ drift.load('usbic7ikt24x');
 		color: white; font: 25px Comic Sans MS;
 		position: relative;
 		top: 123px;
+		animation-duration: 0.5s;
+		animation-name: bounce;
 	}
 	.links{
 	    position:relative;
 		top: 150px;
+		animation-duration: 0.5s;
+		animation-name: bounce;
 	}
+
+	<!-- i love me some annimation -->
+	@keyframes bounce {
+	from {
+		margin-left: 100%;
+		width: 100%; 
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+	}
+	
 </style>
 	<!-- AHH! spaghetti text code -->
 	<h1 class=firstname align="center">Ryan</h1>
 	<h1 class=lastname align="center">Comerford</h1>
-	<h1 class=quote align="center">I have no idea what I'm doing ...</h1>
+	<h1 class=quote align="center">I barely know what I'm doing ...</h1>
 	<!-- you like links? -->
 	<div class=links align="center">
 			<li style="width: 100px; height: 39px; display: inline-block;">
