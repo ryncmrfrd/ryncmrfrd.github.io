@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-<!-- mmmmm i love titles -->
 <title>Ryan Comerford</title>
 <link rel="shortcut icon" href="untitled_1_2DS_icon.ico" type="image/x-icon"/>
 <body style="background-color: Black;">
-
-<!-- start of that contact thingo -->
+<!-- this is that contact thingo in the corner -->
 <script>
 "use strict";
-
 !function() {
   var t = window.driftt = window.drift = window.driftt || [];
   if (!t.init) {
@@ -32,83 +29,63 @@
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('usbic7ikt24x');
 </script>
-<!-- end of that contact thingo -->
-
+<!-- makes the stuff look nice :D -->
 <style>
-	.firstname{
-		height: auto;
-		width: auto;
-		color: white; font: 70px Verdana; font-weight: bold;
+	.center{ 
+		height: 65vh;
 		position: relative;
-		top: 170px;
-		animation-duration: 0.5s;
-		animation-name: bounce;
 	}
-	.lastname{
-		height: auto;
-		width: auto;
+	.center div{
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+    transform: translate(-50%, -50%);
+	}
+	.firstname{
 		color: white; font: 70px Verdana; font-weight: bold;
-		position: relative;
-		top: 125px;
-		animation-duration: 0.5s;
-		animation-name: bounce;
+		height: 135px;
+		width: auto;
 	}
 	.quote{
-		height: auto;
-		width: auto;
 		color: white; font: 25px Comic Sans MS;
-		position: relative;
-		top: 123px;
-		animation-duration: 0.5s;
-		animation-name: bounce;
+		height: 50px;
+		width: auto;
 	}
-	.links{
-	    position:relative;
-		top: 150px;
-		animation-duration: 0.5s;
-		animation-name: bounce;
+	.link{
+		height: 50px;
+		width: 110px;
+		display: inline-block
 	}
-
-	<!-- i love me some annimation -->
-	@keyframes bounce {
-	from {
-		margin-left: 100%;
-		width: 100%; 
-	}
-
-	to {
-		margin-left: 0%;
-		width: 100%;
-	}
-	}
-	
 </style>
-	<!-- AHH! spaghetti text code -->
-	<h1 class=firstname align="center">Ryan</h1>
-	<h1 class=lastname align="center">Comerford</h1>
-	<h1 class=quote align="center">I barely know what I'm doing ...</h1>
-	<!-- you like links? -->
-	<div class=links align="center">
-			<li style="width: 100px; height: 39px; display: inline-block;">
+<body>
+	<div class=center>
+		<div id=NameCard align="center">
+			<!-- change the name to whatever you want -->
+			<p class=firstname align="center">Ryan Comerford</p>
+			<p class=quote align="center">"I barely know what I'm doing"</p>
+			<!-- these are the links. link them to whatever you want -->
+			<li class=link>
 				<a href="https://www.youtube.com/channel/UCF5_3iDc2v_M8cWkTNxpzxw">
 				<img src="https://static.wixstatic.com/media/203dcdc2ac8b48de89313f90d2a4cda1.png/v1/fill/w_39,h_39,al_c,usm_0.66_1.00_0.01/203dcdc2ac8b48de89313f90d2a4cda1.png" target="_blank" alt="" srcset="">
 				</a>
 			</li>
-			<li style="width: 100px; height: 39px; display: inline-block;">
+			<li class=link>
 				<a href="https://twitter.com/lordfennec">
 				<img src="https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_39,h_39,al_c,usm_0.66_1.00_0.01/01ab6619093f45388d66736ec22e5885.png" target="_blank" alt="" srcset="">
 				</a>
 			</li>
-			<li style="width: 100px; height: 39px; display: inline-block;">
+			<li class=link>
 				<a href="https://www.instagram.com/ryn.cmrfrd/">
 				<img src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_39,h_39,al_c,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.png" target="_blank" alt="" srcset="">
 				</a>
 			</li>
-			<li style="width: 100px; height: 39px; display: inline-block;">
+			<li class=link>
 				<a href="https://ryncmrfrd.github.io/Snapchat-671163878.jpg">
 				<img src="https://static.wixstatic.com/media/75e7cbe0d1964bdd84a50ae8731a262d.png/v1/fill/w_39,h_39,al_c,usm_0.66_1.00_0.01/75e7cbe0d1964bdd84a50ae8731a262d.png" target="_blank" alt="" srcset="">
 				</a>
 			</li>
+		</div>
 	</div>
 </body>
 </html>
