@@ -40,7 +40,7 @@ drift.load('usbic7ikt24x');
 		position: absolute;
 		top: 50%;
 		left: 50%;
-    transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 	}
 	.firstname{
 		color: white; font: 70px Verdana; font-weight: bold;
@@ -62,32 +62,50 @@ drift.load('usbic7ikt24x');
 		width: 110px;
 		display: inline-block
 	}
+	.namecard{
+		height: 470px;
+		width: 510px;
+		background-color: black;
+		animation:scale-in-center 6s
+	}
+	
+	@keyframes scale-in-center{
+		0%{
+			opacity:0;
+		}
+		30%{
+			opacity:0;
+		}
+		100%{
+			opacity:1;
+		}
+	}
 </style>
 <body>
 	<div class=center>
-		<div id=NameCard align="center">
+		<div class=namecard align="center">
 			<!-- change the name to whatever you want -->
-			<p class=firstname align="center">Ryan</p>
-			<p class=lastname align="center">Comerford</p>
-			<p class=quote align="center">"I barely know what I'm doing"</p>
+				<p class=firstname align="center">Ryan</p>
+				<p class=lastname align="center">Comerford</p>
+				<p class=quote align="center">"I barely know what I'm doing"</p>
 			<!-- these are the links. link them to whatever you want -->
 			<li class=link>
-				<a href="https://www.youtube.com/channel/UCF5_3iDc2v_M8cWkTNxpzxw">
+				<a href="https://www.youtube.com/channel/UCF5_3iDc2v_M8cWkTNxpzxw" target="_blank">
 				<img src="https://static.wixstatic.com/media/203dcdc2ac8b48de89313f90d2a4cda1.png/v1/fill/w_39,h_39,al_c,usm_0.66_1.00_0.01/203dcdc2ac8b48de89313f90d2a4cda1.png" target="_blank" alt="" srcset="">
 				</a>
 			</li>
 			<li class=link>
-				<a href="https://twitter.com/lordfennec">
+				<a href="https://twitter.com/lordfennec" target="_blank">
 				<img src="https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_39,h_39,al_c,usm_0.66_1.00_0.01/01ab6619093f45388d66736ec22e5885.png" target="_blank" alt="" srcset="">
 				</a>
-			</li>
+			</li >
 			<li class=link>
-				<a href="https://www.instagram.com/ryn.cmrfrd/">
+				<a href="https://www.instagram.com/ryn.cmrfrd/" target="_blank">
 				<img src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_39,h_39,al_c,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.png" target="_blank" alt="" srcset="">
 				</a>
 			</li>
 			<li class=link>
-				<a href="https://ryncmrfrd.github.io/Snapchat-671163878.jpg">
+				<a href="https://ryncmrfrd.github.io/Snapchat-671163878.jpg" target="_blank">
 				<img src="https://static.wixstatic.com/media/75e7cbe0d1964bdd84a50ae8731a262d.png/v1/fill/w_39,h_39,al_c,usm_0.66_1.00_0.01/75e7cbe0d1964bdd84a50ae8731a262d.png" target="_blank" alt="" srcset="">
 				</a>
 			</li>
