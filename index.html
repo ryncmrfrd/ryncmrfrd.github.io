@@ -32,8 +32,10 @@ drift.load('usbic7ikt24x');
 </script>
 <style>
 	.center{ 
-		height: 65vh;
+		height: 75vh;
 		position: relative;
+		animation-name: bounce-in-top;
+		animation-duration: 1s;
     	}
 	.center div{
 		margin: 0;
@@ -57,7 +59,7 @@ drift.load('usbic7ikt24x');
 	}
 	.quote{
 		color: white; 
-		font: 35px "Schoolbell";
+		font: 33px "Comic Sans MS","Schoolbell";
 		height: 50px;
 		width: auto;
 	}
@@ -70,7 +72,41 @@ drift.load('usbic7ikt24x');
 		height: 470px;
 		width: 510px;
 		background: black;
+
 		}
+		
+	@keyframes bounce-in-top{
+		0%{
+		transform:translateY(-500px);
+		animation-timing-function:ease-in;
+		opacity:0
+		}
+		38%{
+		transform:translateY(0);
+		animation-timing-function:ease-out;
+		opacity:1
+		}
+		55%{
+		transform:translateY(-65px);
+		animation-timing-function:ease-in
+		}
+		72%{
+		transform:translateY(0);
+		animation-timing-function:ease-out
+		}
+		81%{
+		transform:translateY(-28px);
+		-webkit-animation-timing-function:ease-in
+		}
+		90%{
+		transform:translateY(0);
+		animation-timing-function:ease-out
+		}
+		95%{
+		transform:translateY(-8px);
+		animation-timing-function:ease-in}100%
+		{transform:translateY(0);animation-timing-function:ease-out}
+	}
 </style>
 <body>
 	<div class=center>
@@ -78,7 +114,7 @@ drift.load('usbic7ikt24x');
 			<!-- change the name to whatever you want -->
 				<p class=firstname align="center">Ryan</p>
 				<p class=lastname align="center">Comerford</p>
-				<p class=quote align="center">i make everything <b>janky as hell</b></p>
+				<p class=quote align="center">i make everything janky as hell</p>
 			<!-- these are the links. link them to whatever you want -->
 			<li class=link>
 				<a href="https://www.youtube.com/channel/UCF5_3iDc2v_M8cWkTNxpzxw" target="_blank">
