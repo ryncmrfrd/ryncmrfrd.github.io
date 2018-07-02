@@ -1,4 +1,4 @@
-	.center{ 
+.center{ 
 		height: 75vh;
 		position: relative;
 		animation-name: bounce-in-top;
@@ -26,14 +26,18 @@
 	}
 	.quote{
 		color: white; 
-		font: 33px "Comic Sans MS","Schoolbell";
+		font: 30px "Comic Sans MS","Schoolbell";
 		height: 50px;
 		width: auto;
 	}
 	.link{
 		height: 50px;
-		width: 110px;
+		width: 85px;
 		display: inline-block;
+		opacity: 0.8;
+	}
+	.link:hover {
+	opacity: 1;
 	}
 	.namecard{
 		height: 470px;
