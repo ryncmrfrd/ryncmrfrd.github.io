@@ -1,192 +1,25 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<meta charset="UTF-8">
-	<title>ryan's janky website</title>
-	<link rel="shortcut icon" href="untitled_1_2DS_icon.ico" type="image/x-icon"/>
-	<link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
-	<body style="background-color: #b2b2b2">
+	<title>Why?</title>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css" type="text/css" media="screen" charset="utf-8">
-	<link rel="stylesheet" href="https://ryncmrfrd.github.io/CSS/style.css" type="text/css" media="screen" charset="utf-8">
-<script>
-	"use strict";
-	!function() {
-	  var t = window.driftt = window.drift = window.driftt || [];
-	  if (!t.init) {
- 	   if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
- 	   t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-  	  t.factory = function(e) {
-  	    return function() {
-  	      var n = Array.prototype.slice.call(arguments);
-  	      return n.unshift(e), t.push(n), t;
-  	    };
-  	  }, t.methods.forEach(function(e) {
- 	     t[e] = t.factory(e);
- 	   }), t.load = function(t) {
-  	    var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-  	    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-  	    var i = document.getElementsByTagName("script")[0];
- 	     i.parentNode.insertBefore(o, i);
- 	   };
-	  }
-	}();
-	drift.SNIPPET_VERSION = '0.3.1';
-	drift.load('usbic7ikt24x');
-</script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<style>
-	.center{ 
-		height: 75vh;
-		position: relative;
-		opacity: 0;
-    	}
-	.center div{
-		margin: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.firstname{
-		font: 70px Verdana; 
-		font-weight: bold;
-		height: 1px;
-		width: auto;
-	}
-	.lastname{
-		font: 70px Verdana; 
-		font-weight: bold;
-		height: 50px;
-		width: auto;
-	}
-	.quote{
-		font: 30px "Comic Sans MS","Schoolbell";
-		height: 50px;
-		width: auto;
-	}
-	.link{
-		height: 20px;
-		width: 85px;
-		display: inline-block;
-		opacity: 1;
-	}
-	.link:hover {opacity: 0.8;}
-	.namecard{
-		border-radius: 15px;
-		border: solid black 2px;
-		height: 450px;
-		width: 490px;
-		background: white;
-		-webkit-box-shadow: 0px 0px 97px -7px rgba(239, 239, 239);
-		-moz-box-shadow: 0px 0px 97px -7px rgba(239, 239, 239);
-		box-shadow: 0px 0px 97px -7px rgba(239, 239, 239);
-		}
-	.center:hover {
-		opacity: 1;
-		animation-name: bounceIn;
-		animation-duration: 1s;
-	}
-@-webkit-keyframes bounceIn {
-	from,
-	20%,
-	40%,
-	60%,
-	80%,
-	to {
-		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-	}
-	0% {
-		opacity: 0;
-		-webkit-transform: scale3d(0.3, 0.3, 0.3);
-		transform: scale3d(0.3, 0.3, 0.3);
-	}
-	20% {
-		-webkit-transform: scale3d(1.1, 1.1, 1.1);
-		transform: scale3d(1.1, 1.1, 1.1);
-	}
-	40% {
-		-webkit-transform: scale3d(0.9, 0.9, 0.9);
-		transform: scale3d(0.9, 0.9, 0.9);
-	}
-	60% {
-		opacity: 1;
-		-webkit-transform: scale3d(1.03, 1.03, 1.03);
-		transform: scale3d(1.03, 1.03, 1.03);
-	}
-	80% {
-		-webkit-transform: scale3d(0.97, 0.97, 0.97);
-		transform: scale3d(0.97, 0.97, 0.97);
-	}
-	to {
-		opacity: 1;
-		-webkit-transform: scale3d(1, 1, 1);
-		transform: scale3d(1, 1, 1);
-	}
-}
-
-@keyframes bounceIn {
-	from,
-	20%,
-	40%,
-	60%,
-	80%,
-	to {
-		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-	}
-	0% {
-		opacity: 0;
-		-webkit-transform: scale3d(0.3, 0.3, 0.3);
-		transform: scale3d(0.3, 0.3, 0.3);
-	}
-	20% {
-		-webkit-transform: scale3d(1.1, 1.1, 1.1);
-		transform: scale3d(1.1, 1.1, 1.1);
-	}
-	40% {
-		-webkit-transform: scale3d(0.9, 0.9, 0.9);
-		transform: scale3d(0.9, 0.9, 0.9);
-	}
-	60% {
-		opacity: 1;
-		-webkit-transform: scale3d(1.03, 1.03, 1.03);
-		transform: scale3d(1.03, 1.03, 1.03);
-	}
-	80% {
-		-webkit-transform: scale3d(0.97, 0.97, 0.97);
-		transform: scale3d(0.97, 0.97, 0.97);
-	}
-	to {
-		opacity: 1;
-		-webkit-transform: scale3d(1, 1, 1);
-		transform: scale3d(1, 1, 1);
-	}
-}
-</style>
-<body>
-	<div class=center>
-		<div class=namecard align="center">
-
-				<p class=firstname align="center">Ryan</p>
-				<p class=lastname align="center">Comerford</p>
-				<p class=quote align="center">i make silly things on the internet</p>
-			<li class=link>
-				<a href="https://github.com/ryncmrfrd" target="_blank"><u><i class="twa twa-2x twa-wrench"></i></u></a>
-			</li>
-			<li class=link>
-				<a href="https://www.youtube.com/channel/UCF5_3iDc2v_M8cWkTNxpzxw" target="_blank"><u><i class="twa twa-2x twa-movie-camera"></i></u></a>
-			</li>
-			<li class=link>
-				<a href="https://twitter.com/lordfennec" target="_blank"><u><i class="twa twa-2x twa-bird"></i></u></a>
-			</li >
-			<li class=link>
-				<a href="https://www.instagram.com/ryn.cmrfrd/" target="_blank"><u><i class="twa twa-2x twa-camera"></i></u></a>
-			</li>
-			<li class=link>
-				<a href="mailto:lordfennec@gmail.com?subject=Hi" target="_blank"><u><i class="twa twa-2x twa-email"></i></u></a>
-			</li>
-		</div>
-	</div>
+<body style="background-color: #eeeeee">
+<div class=div></div>
+<div class=textdiv>
+	<p class=firstname align="center">Ryan</p>
+	<p class=lastname align="center">Comerford</p>
+	<p class=quote align="center">i make silly things on the internet</p>
+	<p class=quote align="center"> <i class="twa twa-0.9x twa-arrow-down"></i> <i>here's some more of them</i> <i class="twa twa-0.9x twa-arrow-down"></i></p>
+</div>
+<div class=middiv></div>
+<div class=bottomdiv align="center">
+	<a href="https://github.com/ryncmrfrd" target="_blank" class="link"><u><i class="twa twa-3x twa-wrench"></i></u></a>
+	<a href="https://www.youtube.com/channel/UCF5_3iDc2v_M8cWkTNxpzxw" target="_blank" class="link"><u><i class="twa twa-3x twa-movie-camera"></i></u></a>
+	<a href="https://twitter.com/lordfennec" target="_blank" class="link"><u><i class="twa twa-3x twa-bird"></i></u></a>
+	<a href="https://www.instagram.com/ryn.cmrfrd/" target="_blank" class="link"><u><i class="twa twa-3x twa-camera"></i></u></a>
+	<a href="mailto:lordfennec@gmail.com?subject=Hi" target="_blank" class="link"><u><i class="twa twa-3x twa-email"></i></u></a>
+</div>
 </body>
 </html>
