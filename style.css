@@ -1,6 +1,6 @@
 .div { height: 10vh; width: 100hh;}
 .textdiv { height: 35vh; width: 100hh; -webkit-animation-name: tada; animation-name: tada; animation-duration: 1.3s;}
-.middiv { height: 37vh; width: 100hh;}
+.middiv { height: 35vh; width: 100hh;}
 .firstname{ font: 90px Verdana;  font-weight: bold; height: 1px; width: auto;}
 .lastname{ font: 90px Verdana;  font-weight: bold; height: 50px;width: auto;}
 .quote{ font: 30px "Comic Sans MS","Schoolbell"; height: 15x; width: auto;}
