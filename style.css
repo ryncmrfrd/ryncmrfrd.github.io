@@ -1,31 +1,29 @@
-    <style>
-        .textdiv { 
-            padding-top: 13vh;
-            height: 35.8vh; 
-            width: 100hh;
-        }
-        .firstname{ 
-            font: 90px Verdana;  
-            font-weight: bold; 
-            height: 1px;
-            text-align: center;
-        }
-        .lastname{ 
-            font: 90px Verdana;  
-            font-weight: bold; 
-            height: 50px;
-            text-align: center;
-        }
-        .quote{ 
-            font: 25px "Comic Sans MS","Schoolbell";
-            height: 15px;
-            text-align: center;
-         }
-        .linksdiv { 
-            height: 5vh; 
-            width: 100hh; 
-            padding-top: 3.5vh;
-        }        
-        .link{ display: inline-block; width: 80px;}
-        .link:hover { opacity: 0.8;}
-    </style>
+.textdiv { 
+    padding-top: 13vh;
+    height: 35.8vh; 
+    width: 100hh;
+}
+.firstname{ 
+    font: 90px Verdana;  
+    font-weight: bold; 
+    height: 1px;
+    text-align: center;
+}
+.lastname{ 
+    font: 90px Verdana;  
+    font-weight: bold; 
+    height: 50px;
+    text-align: center;
+}
+.quote{ 
+    font: 25px "Comic Sans MS","Schoolbell";
+    height: 15px;
+    text-align: center;
+}
+.linksdiv { 
+    height: 5vh; 
+    width: 100hh; 
+    padding-top: 3.5vh;
+}        
+.link{ display: inline-block; width: 80px;}
+.link:hover { opacity: 0.8;}
