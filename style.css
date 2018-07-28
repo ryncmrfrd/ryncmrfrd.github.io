@@ -4,13 +4,15 @@
     width: 100hh;
 }
 .firstname{ 
-    font: 90px Verdana;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
     font-weight: bold; 
     height: 1px;
     text-align: center;
 }
 .lastname{ 
-    font: 90px Verdana;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
     font-weight: bold; 
     height: 50px;
     text-align: center;
