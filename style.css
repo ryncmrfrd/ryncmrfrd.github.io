@@ -6,14 +6,12 @@
 .firstname{ 
     font-family: 'Roboto', sans-serif;
     font-size: 90px;
-    font-weight: bold; 
     height: 1px;
     text-align: center;
 }
 .lastname{ 
     font-family: 'Roboto', sans-serif;
     font-size: 90px;
-    font-weight: bold; 
     height: 50px;
     text-align: center;
 }
@@ -21,11 +19,51 @@
     font: 25px "Comic Sans MS","Schoolbell";
     height: 15px;
     text-align: center;
+    padding-top: 4.5vh;
 }
 .linksdiv { 
     height: 5vh; 
     width: 100hh; 
     padding-top: 3.5vh;
-}        
-.link{ display: inline-block; width: 80px;}
-.link:hover { opacity: 0.8;}
+} 
+.link{ display: inline-block; width: 70px; opacity: 0.9;}
+.link:hover {
+    opacity: 1;
+    -webkit-animation-name: pulse; 
+    animation-name: pulse;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
