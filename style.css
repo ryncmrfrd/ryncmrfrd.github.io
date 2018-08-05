@@ -1,6 +1,6 @@
-.textdiv { 
+    .textdiv { 
     padding-top: 13vh;
-    height: 35.8vh; 
+    height: 358px; 
     width: 100hh;
 }
 .firstname{ 
@@ -19,12 +19,12 @@
     font: 25px "Comic Sans MS","Schoolbell";
     height: 15px;
     text-align: center;
-    padding-top: 4.5vh;
+    padding-top: 45px;
 }
 .linksdiv { 
-    height: 5vh; 
+    height: 50px; 
     width: 100hh; 
-    padding-top: 3.5vh;
+    padding-top: 35px;
 } 
 .link{ display: inline-block; width: 70px; opacity: 0.9;}
 .link:hover {
