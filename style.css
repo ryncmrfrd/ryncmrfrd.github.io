@@ -1,37 +1,72 @@
-    .textdiv { 
-    padding-top: 13vh;
-    height: 358px; 
-    width: 100hh;
+@media screen and (orientation: portrait) { 
+	.textdiv { 
+    	padding-top: 13vh;
+    	height: 358px; 
+    	width: 100hh;
+	}
+	.firstname{ 
+    	font-family: 'Roboto', sans-serif;
+    	font-size: 90px;
+    	height: 1px;
+   	text-align: center;
+	}
+	.lastname{ 
+   	font-family: 'Roboto', sans-serif;
+   	font-size: 90px;
+    	height: 50px;
+   	text-align: center;
+		}
+	.quote{ 
+    	font: 25px "Comic Sans MS","Schoolbell";
+    	height: 15px;
+    	text-align: center;
+   	padding-top: 45px;
+	}
+	.linksdiv { 
+    	height: 50px; 
+   	width: 100hh; 
+   	padding-top: 35px;
+	}
 }
-.firstname{ 
-    font-family: 'Roboto', sans-serif;
-    font-size: 90px;
-    height: 1px;
-    text-align: center;
-}
-.lastname{ 
-    font-family: 'Roboto', sans-serif;
-    font-size: 90px;
-    height: 50px;
-    text-align: center;
-}
-.quote{ 
-    font: 25px "Comic Sans MS","Schoolbell";
-    height: 15px;
-    text-align: center;
-    padding-top: 45px;
-}
-.linksdiv { 
-    height: 50px; 
-    width: 100hh; 
-    padding-top: 35px;
-} 
-.link{ display: inline-block; width: 70px; opacity: 0.9;}
+
 .link:hover {
     opacity: 1;
     -webkit-animation-name: pulse; 
     animation-name: pulse;
     animation-duration: 0.5s;
+}
+
+@media screen and (orientation: landscape) {
+	body {transform: scale(1.1);}
+	.textdiv { 
+    	padding-top: 7vh;
+    	height: 358px; 
+    	width: 100hh;
+	}
+	.firstname{ 
+    	font-family: 'Roboto', sans-serif;
+    	font-size: 90px;
+    	height: 1px;
+   	text-align: center;
+	}
+	.lastname{ 
+   	font-family: 'Roboto', sans-serif;
+   	font-size: 90px;
+    	height: 50px;
+   	text-align: center;
+		}
+	.quote{ 
+    	font: 25px "Comic Sans MS","Schoolbell";
+    	height: 15px;
+    	text-align: center;
+   	padding-top: 45px;
+	}
+	.linksdiv { 
+    	height: 50px; 
+   	width: 100hh; 
+   	padding-top: 35px;
+	} 
+	.link{ display: inline-block; width: 70px; opacity: 0.9;}
 }
 
 @-webkit-keyframes pulse {
