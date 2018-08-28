@@ -3,23 +3,43 @@
 <head>
 
         <title>Welcome!</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-        <link rel="stylesheet" href="https://ryncmrfrd.me/style.css" type="text/css" >
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 
+<style>
+#cardDiv{
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.cardDiv{
+    height: 15vw;
+    width: 60vh;
+}
+.cardDivMobile{
+    height: 30vw;
+    width: 80vh;
+}
+
+.topText{ text-align: center; font: 3.1vw "Roboto"; }
+.bottomText{ text-align: center; font: 1.2vw "Comic Sans MS","Schoolbell"; }
+
+.topTextMobile{ text-align: center; font: 6.2vw "Roboto"; }
+.bottomTextMobile{ text-align: center; font: 2.4vw "Comic Sans MS","Schoolbell"; }
+
+</style>
+
 <body style="background-color: #eeeeee">
-    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="centerDiv">
+    <div class="cardDivMobile" id="cardDiv">
 
         <div class="textdiv">
             <!-- Name and Quote -->
-            <h1 class="text" id="topText">Ryan Comerford</h1>
-            <h4 class="text" id="bottomText">these are all the silly things i've made</h4>
+            <h1 class="topText" id="toptext">Ryan Comerford</h1>
+            <h4 class="bottomText" id="bottomtext">these are all the silly things i've made</h4>
         </div>
 
         <div class="linksdiv">
@@ -48,4 +68,7 @@
 
     </div>
 </body>
+
+<script src="changecontents.js"></script>
+
 </html>
