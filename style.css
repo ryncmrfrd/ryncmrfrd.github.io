@@ -16,7 +16,7 @@ body{
     left: 0;
 }
 .cardmobile{
-    height: 47vh;
+    height: 40vh;
     width: 90vw;   
 }
 .carddesktop{
@@ -68,8 +68,8 @@ a.buttonmobile{
     width: auto;
 
     margin-top: 4vh;
-    margin-left: 5.5vw;
-    margin-right: 5.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 
     border-radius: 15%;
 }
