@@ -19,32 +19,29 @@ var isMobile = {
     }
 };
 
-function changeDeviceCSS() {
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
-    if (isMobile.any()) {
+function changeCSSBasedOnDevice() {
 
-        document.getElementById("card").className = "cardmobile";
-        document.getElementById("nametext").className = "nametextmobile";
-        document.getElementById("quotetext").className = "quotetextmobile";
-        
-        document.getElementById("button1").className = "buttonmobile";
-        document.getElementById("button2").className = "buttonmobile";
-        document.getElementById("button3").className = "buttonmobile";
-        document.getElementById("button4").className = "buttonmobile";
-        document.getElementById("button5").className = "buttonmobile";
+    if (w > h){
 
+        document.getElementById("button1").className = "buttonHorizontal";
+        document.getElementById("button2").className = "buttonHorizontal";
+        document.getElementById("button3").className = "buttonHorizontal";
+        document.getElementById("button4").className = "buttonHorizontal";
+        document.getElementById("button5").className = "buttonHorizontal";
+        document.getElementById("card").className = "cardhorizontal";    
     }
-    else {
+    else{
 
-        document.getElementById("card").className = "carddesktop";
-        document.getElementById("nametext").className = "nametextdesktop";
-        document.getElementById("quotetext").className = "quotetextdesktop";
-        
-        document.getElementById("button1").className = "buttondesktop";
-        document.getElementById("button2").className = "buttondesktop";
-        document.getElementById("button3").className = "buttondesktop";
-        document.getElementById("button4").className = "buttondesktop";
-        document.getElementById("button5").className = "buttondesktop";
+        document.getElementById("button1").className = "buttonVertical";
+        document.getElementById("button2").className = "buttonVertical";
+        document.getElementById("button3").className = "buttonVertical";
+        document.getElementById("button4").className = "buttonVertical";
+        document.getElementById("button5").className = "buttonVertical";
+        document.getElementById("card").className = "cardvertical";
+    
     }
 
 }
