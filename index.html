@@ -1,44 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" >
 <head>
 
-    <title>Hi</title>
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="index.js"></script>
-
+  <meta charset="UTF-8">
+  <title>Ryan's Profile</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 
-<body onload="changeCSSBasedOnDevice()">
+<body>
 
-<div class="" id="card">
+  <div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img"></div>
 
-    <p id="nametext">Ryan Comerford</p>
-    <p id="quotetext">these are all the silly things i've made</p>
 
-    <a href="https://github.com/ryncmrfrd" target="_blank" id="button1" class="">
-        <i class="fab fa-github fa-2x"></i>
-    </a>
+      <div class="blog-slider__content" id="Scale">
+          <span class="blog-slider__code">Welcome!</span>
+          <div class="blog-slider__title">I'm Ryan Comerford</div>
+          <div class="blog-slider__text">I make things on the internet ...</div>
+        </div>
+      </div>
+  
+  
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img"></div>
+        <div class="blog-slider__content">
+          
+          <span class="blog-slider__code">Wanna know more?</span>
+          <div class="blog-slider__title">Here are some links!</div>
+          <div class="blog-slider__text"></div>
+  
+          <a href="https://github.com/ryncmrfrd" target="_blank" class="blog-slider__button" id="Button"><i class="twa twa-2x twa-open-file-folder"></i></a>
+          <a href="https://www.youtube.com/channel/UCF5_3iDc2v_M8cWkTNxpzxw" target="_blank" class="blog-slider__button" id="Button"><i class="twa twa-2x twa-video-camera"></i></a>
+          <a href="https://twitter.com/lordfennec" target="_blank" class="blog-slider__button" id="Button"><i class="twa twa-2x twa-bird"></i></a>
+   
+          <a href="https://www.instagram.com/coopsandpoppo/" target="_blank" class="blog-slider__button" id="ButtonBottom"><i class="twa twa-2x twa-dog"></i></a>
+          <a href="https://www.instagram.com/ryncmrfrd/" target="_blank" class="blog-slider__button" id="ButtonBottom"><i class="twa twa-2x twa-camera"></i></a>
+          <a href="mailto:lordfennec@gmail.com?subject=Hi" target="_blank" class="blog-slider__button" id="ButtonBottom"><i class="twa twa-2x twa-envelope"></i></a>
+        
+        </div>
+    </div>
     
-    <a href="https://www.youtube.com/channel/UCF5_3iDc2v_M8cWkTNxpzxw" target="_blank" id="button2" class="">
-        <i class="fab fa-youtube fa-2x"></i>
-    </a>
-    
-    <a href="https://twitter.com/lordfennec" target="_blank" id="button3" class="">
-        <i class="fab fa-twitter fa-2x"></i>
-    </a>
 
-    <a href="https://www.instagram.com/ryncmrfrd/" target="_blank" id="button4" class="">
-        <i class="fab fa-instagram fa-2x"></i>
-    </a>
-
-    <a href="mailto:lordfennec@gmail.com?subject=Hi" target="_blank" id="button5" class="">
-            <i class="fas fa-envelope fa-2x"></i>
-    </a>
-
+  </div>
+  <div class="blog-slider__pagination"></div>
 </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+  <script  src="index.js"></script>
 
 </body>
 
