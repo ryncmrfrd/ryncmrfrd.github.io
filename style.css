@@ -42,32 +42,32 @@ p{font-family: 'Comic Sans MS', 'Schoolbell', cursive;}
 /* iPhone 5S */
 @media only screen and (max-width: 320px)  {
     .medium{
-    -ms-transform: scale(3); /* IE 9 */
-    -webkit-transform: scale(3); /* Safari */
-    transform: scale(3);
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Safari */
+    transform: scale(2);
     }
 }
 /* iPhone 6+ */
 @media only screen and (max-width: 414px)  {
     .medium{
-        -ms-transform: scale(2.5); /* IE 9 */
-        -webkit-transform: scale(2.5); /* Safari */
-        transform: scale(2.5);
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari */
+        transform: scale(1.8);
     }
 }
 /* iPad Mini */
 @media only screen and (max-width: 703px)  {
     .medium{
-        -ms-transform: scale(2); /* IE 9 */
-        -webkit-transform: scale(2); /* Safari */
-        transform: scale(2);
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari */
+        transform: scale(1.5);
     }
 }
 /* iPad Air */
 @media only screen and (max-width: 768px)  {
     .medium{
-        -ms-transform: scale(1.5); /* IE 9 */
-        -webkit-transform: scale(1.5); /* Safari */
-        transform: scale(1.5);
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
     }
 }
