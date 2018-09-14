@@ -1,73 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="description" content="Hi, I'm Ryan">
-  <meta name="theme-color" content="#07c" />
-  <meta name="keywords" content="Ryan Comerford,Profile,Web,CSS,HTML,JS">
-  <meta name="author" content="Ryan Comerford">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Profile</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hi, I'm Ryan">
+    <meta name="theme-color" content="#07c" />
+    <meta name="keywords" content="Ryan Comerford,Profile,Web,CSS,HTML,JS">
+    <meta name="author" content="Ryan Comerford">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
 
-  <title>Ryan's Profile</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  
-  <link rel="stylesheet" href="css/style.css">
-  
+    <link rel="stylesheet" href="https://unpkg.com/picnic">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 
 <body>
 
-  <div class="card-container" id="card">
-  <div class="card">
-
-    <div class="front" >
-      
-      <div style="display: inline; text-align: center">
-        <h1>Hi, I'm Ryan</h1>
-        <p>and i make things on the internet ...</p>
-      </div>
-
+    <div class="modal">
+        <input id="modal_1" type="checkbox" />
+        <label for="modal_1" class="overlay"></label>
+        <article>
+            <header >
+                <h3>Which one do you want?</h3>
+                <label for="modal_1" class="close">&times;</label>
+            </header>
+            <footer>
+                <a href="https://instagram.com/ryncmrfrd" target="_blank" class='button large-button'>
+                    <b>(Me)</b> @ryncmrfrd <i class="fas fa-laugh-beam"></i>
+                </a>
+                <a href="https://www.instagram.com/coopsandpoppo/" target="_blank" class='button large-button'>
+                        <b>(My Puppies)</b> @coopsandpoppo <i class="fas fa-heart"></i>
+                </a>
+            </footer>
+        </article>
     </div>
-    <div class="back">
 
-      <div style="display: inline; text-align: center">
-        <h3>Here's some links!</h3>
-        <p class="pleaseclick">(please click on them)</p>
+    <script src="index.js"></script>
+
+    <div  class="card medium center">
+        <header >
+            <h1>Hi, I'm Ryan</h1>
+        </header>
+        <footer>
+            <p style="margin-bottom: 12px;">and i make things on the internet</p>
+            <a href="https://github.com/ryncmrfrd" target="_blank" class='button small-button'>
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="http://youtube.com/lordfennec" target="_blank" class='button small-button'>
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://twitter.com/lordfennec" target="_blank" class='button small-button'>
+                <i class="fab fa-twitter"></i>
+            </a>
+            <label for="modal_1" class="button small-button">
+                <i class="fab fa-instagram"></i>
+            </label>
+        </footer>
+    </div>
     
-      <div style="text-align: center">
-      <button class="mdl-button mdl-js-button mdl-button--icon" onclick="window.location.href='https://github.com/ryncmrfrd'">
-        <i class="fab fa-github"></i>
-      </button>
-
-      <button class="mdl-button mdl-js-button mdl-button--icon" onclick="window.location.href='http://youtube.com/lordfennec'">
-        <i class="fab fa-youtube"></i>
-      </button>
-
-      <button class="mdl-button mdl-js-button mdl-button--icon" onclick="window.location.href='https://twitter.com/lordfennec'">
-        <i class="fab fa-twitter"></i>
-      </button>
-
-      <button class="mdl-button mdl-js-button mdl-button--icon" onclick="window.location.href='https://instagram.com'">
-          <i class="fab fa-instagram"></i>
-      </button>
-      </div>
-    </div>
-  
-  </div>
-</div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js'></script>
-  <script  src="js/index.js"></script>
-
 </body>
-
 </html>
