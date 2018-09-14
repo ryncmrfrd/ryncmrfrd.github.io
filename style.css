@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Roboto|Schoolbell');
 
-h1,h2,h3,h4{font-family: 'Roboto', sans-serif;}
-h5{font-family: 'Libre Barcode 128 Text', cursive;}
-p{font-family: 'Comic Sans MS', 'Schoolbell', cursive;}
+h1,h2,h3,h4{font-family: 'Roboto', sans-serif; font-weight: normal;}
+h5{font-family: 'Libre Barcode 128 Text', cursive; font-weight: normal;}
+p{font-family: 'Comic Sans MS', 'Schoolbell', cursive; font-weight: normal;}
 
 .center{
     position: absolute;
@@ -19,6 +19,7 @@ p{font-family: 'Comic Sans MS', 'Schoolbell', cursive;}
 }
 
 .large-button{
+    font-size: 10px;
     height: auto;
     width: 100%;
 }
