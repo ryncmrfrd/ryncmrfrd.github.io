@@ -46,6 +46,9 @@ p{font-family: 'Comic Sans MS', 'Schoolbell', cursive; font-weight: normal;}
     height: 259px;
     width: 305px;
 }
+.inline{
+    display: inline-block; 
+}
 /* iPhone 5S */
 @media only screen and (max-width: 320px)  {
     .medium{
