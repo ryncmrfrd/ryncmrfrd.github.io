@@ -4,6 +4,8 @@
 <head>
 
     <title>Ryan's Profile</title>
+
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="description" content="Hi, I'm Ryan">
     <meta name="theme-color" content="#07c" />
@@ -11,7 +13,7 @@
     <meta name="author" content="Ryan Comerford">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://unpkg.com/picnic">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -20,47 +22,57 @@
 
 <body>
 
-    <div class="modal">
-        <input id="modal_1" type="checkbox" />
-        <label for="modal_1" class="overlay"></label>
-        <article>
+    <!-- Content Container -->
+    <div class="container center">
+        <!-- Popup Card -->
+        <div class="modal">
+            <input id="modal_1" type="checkbox" />
+            <label for="modal_1" class="overlay"></label>
+            <article>
+                <header >
+                    <h3>Which one do you want?</h3>
+                    <label for="modal_1" class="close">&times;</label>
+                </header>
+                <footer>
+                    <a href="https://instagram.com/ryncmrfrd" target="_blank" class='button large-button'>
+                        <b>(Me)</b> @ryncmrfrd <i class="fas fa-laugh-beam"></i>
+                    </a>
+                    <a href="https://www.instagram.com/coopsandpoppo/" target="_blank" class='button large-button'>
+                        <b>(Puppies)</b> @coopsandpoppo <i class="fas fa-heart"></i>
+                    </a>
+                </footer>
+            </article>
+        </div>
+        <script src="index.js"></script>
+        <!-- Normal Card -->
+        <div  class="card medium">
             <header >
-                <h3>Which one do you want?</h3>
-                <label for="modal_1" class="close">&times;</label>
+                <h1 style="margin-top: 5px;">Hi, I'm Ryan</h1>
             </header>
             <footer>
-                <a href="https://instagram.com/ryncmrfrd" target="_blank" class='button large-button'>
-                    <b>(Me)</b> @ryncmrfrd <i class="fas fa-laugh-beam"></i>
+                <p style="margin-bottom: 12px;">and i make things on the internet</p>
+                <a href="https://github.com/ryncmrfrd" target="_blank" class='button small-button'>
+                    <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.instagram.com/coopsandpoppo/" target="_blank" class='button large-button'>
-                        <b>(Puppies)</b> @coopsandpoppo <i class="fas fa-heart"></i>
+                <a href="http://youtube.com/lordfennec" target="_blank" class='button small-button'>
+                    <i class="fab fa-youtube"></i>
                 </a>
+                <a href="https://twitter.com/lordfennec" target="_blank" class='button small-button'>
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <label for="modal_1" class="button small-button">
+                    <i class="fab fa-instagram"></i>
+                </label>
             </footer>
-        </article>
+        </div>
+        <!-- Projects Card -->
+        <article class="card short">
+            <header>
+              <h3>Current Projects</h3>
+              <a style="margin-bottom: 6px;"class="button success" disabled>View</a>
+            </header>
+          </article>
     </div>
 
-    <script src="index.js"></script>
-
-    <div  class="card medium center">
-        <header >
-            <h1 style="margin-top: 5px;">Hi, I'm Ryan</h1>
-        </header>
-        <footer>
-            <p style="margin-bottom: 12px;">and i make things on the internet</p>
-            <a href="https://github.com/ryncmrfrd" target="_blank" class='button small-button'>
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="http://youtube.com/lordfennec" target="_blank" class='button small-button'>
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://twitter.com/lordfennec" target="_blank" class='button small-button'>
-                <i class="fab fa-twitter"></i>
-            </a>
-            <label for="modal_1" class="button small-button">
-                <i class="fab fa-instagram"></i>
-            </label>
-        </footer>
-    </div>
-    
 </body>
 </html>
