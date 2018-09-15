@@ -34,11 +34,21 @@ p{font-family: 'Comic Sans MS', 'Schoolbell', cursive; font-weight: normal;}
     -webkit-transform: scale(1); /* Safari */
     transform: scale(1);
 }
+.short{
+    height: auto;
+    width: 305px;
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari */
+    transform: scale(1);
+}
 .large{
     height: auto;
     width: 75%;
 }
-
+.container{
+    height: 259px;
+    width: 305px;
+}
 /* iPhone 5S */
 @media only screen and (max-width: 320px)  {
     .medium{
