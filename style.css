@@ -50,7 +50,7 @@ body {background-repeat: no-repeat; background-attachment: fixed; background-ima
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         top: 0;right: 0; bottom: 0; left: 0;
         height: 225px;
-        width: 350px;
+        width: 99%;
     }
     .card-name{
         margin: 17px auto;
@@ -73,7 +73,6 @@ body {background-repeat: no-repeat; background-attachment: fixed; background-ima
         color: black;
         height: 100%; width: 35%;
         margin: auto 4.4%;
-        font-size: 25px;
     }
     .card-button i:hover{
 	    background: linear-gradient(to bottom right, #ee3d48, #f25544 );
