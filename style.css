@@ -50,7 +50,7 @@ body {background-repeat: no-repeat; background-attachment: fixed; background-ima
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         top: 0;right: 0; bottom: 0; left: 0;
         height: 225px;
-        width: 99%;
+        width: 90vw;
     }
     .card-name{
         margin: 17px auto;
