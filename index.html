@@ -11,8 +11,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="yandex-verification" content="6d413389522c246e" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -20,19 +20,31 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel='stylesheet' href='style.css'>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
-<body>
-    <!-- please stop making websites -->
-    <div class="padding"></div>
-    <h1>Hi, I'm Ryan</h1>
-    <p>i make things on the internet</p>
-    <a href="https://go.ryncmrfrd.me/github" target="_blank" class="card-button"><i class="fab fa-github"></i></a>
-    <a href="https://go.ryncmrfrd.me/youtube" target="_blank" class="card-button"><i class="fab fa-youtube"></i></a>
-    <a href="https://go.ryncmrfrd.me/twitter" target="_blank" class="card-button"><i class="fab fa-twitter"></i></a>
-    <a href="https://go.ryncmrfrd.me/instagram" target="_blank" class="card-button"><i class="fab fa-instagram"></i></a>
-    <a href="https://go.ryncmrfrd.me/dogs" target="_blank" class="card-button"><i class="fas fa-dog"></i></a>
+<script>
+function DarkMode(){
+    if (new Date().getHours() > 18) {
+        $('.title').toggleClass( "dark" )
+        $('.quote').toggleClass( "dark" )
+        $('.link').toggleClass( "dark" )
+        $('.body').toggleClass( "dark" )
+    }
+    else{ $("#night").css("display", "none") }
+}
+</script>
+<body class="body" onload="DarkMode()">
+    <h1 class="title">Hi, I'm Ryan</h1>
+    <p class="quote">i make things on the internet</p>
+    <a class="link" href="https://go.ryncmrfrd.me/github" target="_blank" class="card-button"><i class="fab fa-github"></i></a>
+    <a class="link" href="https://go.ryncmrfrd.me/youtube" target="_blank" class="card-button"><i class="fab fa-youtube"></i></a>
+    <a class="link" href="https://go.ryncmrfrd.me/twitter" target="_blank" class="card-button"><i class="fab fa-twitter"></i></a>
+    <a class="link" href="https://go.ryncmrfrd.me/instagram" target="_blank" class="card-button"><i class="fab fa-instagram"></i></a>
+    <a class="link" href="https://go.ryncmrfrd.me/dogs" target="_blank" class="card-button"><i class="fas fa-dog"></i></a>
+    <p class="quote" id="night">and also, good night <i class="fas fa-cloud-moon"></i></p>
 </body>
 </html>
