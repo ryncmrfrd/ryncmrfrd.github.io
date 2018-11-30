@@ -1,33 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Schoolbell');
 html {height: 100%;}
 body { text-align: center; }
-.padding {
-    height: 250px;
-    width: 100%;
+
+.title, h2, .quote, a { color: black; font-family: 'Roboto', sans-serif; }
+.title { font-size: 50px; padding-top: 100px; }
+.quote { font-size: 20px; padding: 5px 0px; }
+
+.link { font-size: 25px; padding: 0px 15px; }
+.link:hover, .button:hover{ color: #5ebcff; text-shadow: 0px 0px 100px #07c; }
+
+button {
+    font-size: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
 }
-h1, p, a {
-    color: black;
-    font-family: 'Roboto', sans-serif;
-}
-p {
-    font-size: 20px;
-    padding-bottom: 5px;
-}
-h1{ 
-    font-size: 50px;
-    font-weight: bold;
-    color:#fa0;
-    /*text-shadow: 3px 2px 100px #fa0;*/
-}
-a i{ 
-    text-shadow: 0px 0px 100px rgba(0, 0, 0, 0.60);
-    font-size: 25px;
-    padding: 0 15px;
-}
-a i:hover { 
-    color:#ee3d48;
-    text-shadow: 0px 0px 100px rgba(255, 81, 92, 0.5);
-}
+
+#night{ color: #5ebcff; }
+.dark { color: white; background-color: black;}
 
 @media only screen and (max-height: 750px) {
     .padding {
