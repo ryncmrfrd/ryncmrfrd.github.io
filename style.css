@@ -14,9 +14,3 @@ button {
     bottom: 0px;
     left: 20px;
 }
-
-@media only screen and (max-height: 750px) { .title { padding-top: 180px; }}
-@media only screen and (min-height: 700px) { .title { padding-top: 30vh; }}
-@media (orientation:landscape) { .title { padding-top: 15vh; }}
-@media (max-height: 350px) and (orientation:landscape) { .title { padding-top: 15vh; }}
-@media (max-height: 350px) and (orientation:landscape) { .title { padding-top: 10vh; }}
