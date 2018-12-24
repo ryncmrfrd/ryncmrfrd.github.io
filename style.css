@@ -6,7 +6,7 @@ body { text-align: center; }
 .quote { font-size: 20px; padding: 5px 0px; }
 .link { font-size: 25px; padding: 0px 15px; }
 .link:hover, .button:hover{ color: #5ebcff; text-shadow: 0px 0px 100px #07c; }
-.dark { color: white; background-color: black; }
+.dark { display: block; color: white; background-color: black; }
 #night{ color: #5ebcff; }
 button {
     font-size: 15px;
