@@ -9,10 +9,10 @@
 <body>
     <main class="ryn-home-wrapper" >
         <h1 class="ryn-home-title">Hi, I'm Ryan</h1>
-        <p class="ryn-home-quote">I make <a class="ryn-home-link">things</a> on the internet.</p>
+        <p class="ryn-home-quote">I make <a class="ryn-home-link" href="#is-things-header">things</a> on the internet.</p>
     </main>
     <div id="ryn-home-particles"></div>
-    <section class="ryn-header-wrapper">
+    <section class="ryn-header-wrapper" data-scroll id="is-things-header">
         <h1 class="ryn-things-title">Things I've Made</h1>
         <p style="margin-top: 10px;">Just click on them to view the whole project.</p>
     </section>
@@ -53,5 +53,8 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.1/smooth-scroll.min.js"></script>
     <script src='index.js'></script>
+ <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 </html>

@@ -6,7 +6,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .ryn-home-title{color: white; font-size: 3em;z-index: 9999;}
 .ryn-home-quote{color: #46B0FB;z-index: 9999;}
 .ryn-home-quote{margin-top: 10px; font-size: 1.3em;}
-.ryn-home-link{text-decoration: none; color: white;}
+.ryn-home-link{text-decoration: underline; color: white;}
 /*things.html*/
 .ryn-header-wrapper{display: flex; flex-direction: column; justify-content: center; align-items: center; height: 17.5vh; padding: 0 10px; background: white;}
 .ryn-things-body{height: 82.5vh;}
