@@ -1,0 +1,56 @@
+/**
+    RYNCMRFRD.ME
+    @author Ryan Comerford
+    @link https://ryncmrfrd.me
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;font-family: sans-serif}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration: none;}
+@keyframes home-arrow-bounce{0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-30px);} 60% {transform: translateY(-15px);}}
+body{min-height: 200vh; max-height: 200vh; margin: 0; padding: 0; overscroll-behavior: none;}
+#particles{position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: transparent;}
+.home-wrapper{display: flex; flex-direction: column; justify-content: center; align-items: center; height: 87.5vh; padding-bottom: 12.5vh; background: #07c;}
+.home-title{color: white; font-size: 3em; z-index: 9999;}
+.home-quote{margin-top: 10px; font-size: 1.3em; color: #46B0FB; z-index: 9999;}
+.home-quote strong{text-decoration: none; color: white; font-weight: initial;}
+.home-links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+    width: 285px;
+}
+.home-links a{
+    transition: color 0.2s;
+    color: #46B0FB;
+    font-size: 1.75em;
+    margin: 0 auto;
+    z-index: 9999;
+}
+.home-links a:hover{
+    color: white;
+}
+.home-arrow-button{display: flex; justify-content: space-around; align-items: center; background: transparent; border:none; position: relative; top: 52.5%; z-index: 1; height: 100px; width: 100px;}
+.home-arrow-button:hover{cursor: pointer;}
+.home-arrow-button:focus{outline: 0;}
+.home-arrow{width: 40px; height: 40px; background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=); background-size: contain; animation: home-arrow-bounce 2s infinite;}
+.things-wrapper{height: 100vh; overflow: hidden;}
+.things-header{display: flex; flex-direction: column; justify-content: center; align-items: center; height: 17.5vh; padding: 0 10px;}
+.things-header-title{font-size: 2.5em;}
+.things-header-quote{margin-top: 10px;}
+.things-body{height: 82.5vh;}
+.things-lifx{height: 27.5vh; width: 50%; float: left; display: inline-flex; justify-content: center; flex-direction: column; align-items: center; background: #450099;}
+.things-lifx-img{height: 100px;}
+.things-lifx-quote{color: white; font-size: 1.75em; margin-left: 110px;}
+.things-tasks{position: relative; height: 27.5vh; width: 50%; display: inline-flex; flex-direction: column; justify-content: center; align-items: center; background: #407ce6;}
+.things-tasks-span{display: flex; justify-content: space-around; align-items: center; border-radius: 0.7em; background: white; width: 250px; height: 100px;}
+.things-tasks-title{color: black; font-size: 1.9em; text-align: center; margin-right: 15px;}
+.things-tasks-icon{height: 100px; width: 100px;}
+.things-safc{height: 27.5vh; display: flex; width: 100%; justify-content: center; align-items: center; background: #eb172b;}
+.things-safc-title{color: black; text-decoration: none; font-size: 2.6em;}
+.things-safc-quote{color: black; opacity: 0.5; margin-top: 10px; font-size: 1.55em; text-align: center;}
+.things-safc-img{height: 100px; width: 100px;}
+.things-compass{height: 27.5vh; width: 50%; float: left; display: inline-flex; justify-content: center; align-items: center; background: #126bac;}
+.things-compass-logo{height: 200px;}
+.things-compass-title{position: relative; bottom: 65px; font-weight: initial; color: white; font-size: 3.2em; text-align: center;}
+.things-pascal{height: 27.5vh; width: 50%; display: inline-flex; justify-content: center; align-items: center; background: #F433AB;}
+.things-pascal-link{display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.things-pascal-title{font-size: 1.5em; color: white; text-align: center;}
+.things-pascal-triangle{text-align: center;margin-bottom: 10px;color: purple;}

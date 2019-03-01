@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <head>
-    <meta charset='UTF-8'>
-    <title>Home - ryncmrfrd.me</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="shortcut icon" type="image/png" href="favicon-32x32.png"/>
-    <link rel='stylesheet' href='style.css'>
+    <title>Ryan Comerford</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hi, I'm Ryan">
+    <meta name="theme-color" content="#07c" />
+    <meta name="keywords" content="Ryan Comerford,Profile,Web,CSS,HTML,JS">
+    <meta name="author" content="Ryan Comerford">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="RaC2oR0K9ddINZenIO5-QUL_Zx46XdFiMiNqpAalO2Q" />
+    <link rel="shortcut icon" type="image/png" href="build/favicon-32x32.png" />
+    <link rel='stylesheet' href='build/css/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-    <main class="ryn-home-wrapper">
-        <h1 class="ryn-home-title">Hi, I'm Ryan</h1>
-        <p class="ryn-home-quote">I make <a class="ryn-home-link">things</a> on the internet.</p>
-        <button onclick="scrollDown()" class="ryn-home-arrow-button">
-            <div class="ryn-home-arrow"></div>
-        </button>
-    </main>
-    <div id="ryn-home-particles"></div>
-    <section class='ryn-things-wrapper'>
-        <div class="ryn-header-wrapper">
-            <h1 class="ryn-things-title">Things I've Made</h1>
-            <p style="margin-top: 10px;">Just click on them to view the whole project.</p>
+    <main class="home-wrapper">
+        <h1 class="home-title">Hi, I'm Ryan</h1>
+        <p class="home-quote">I make <strong>things</strong> on the internet.</p>
+        <div class="home-links">
+            <a href="https://go.ryncmrfrd.me/github" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://go.ryncmrfrd.me/twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://go.ryncmrfrd.me/instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://go.ryncmrfrd.me/dogs" target="_blank"><i class="fas fa-dog"></i></a>
+            <a href="mailto:ryncmrfrd@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
-        <div class='ryn-things-body'>
-                <article class='ryn-things-half left lifx'>
-                    <a href='https://ryncmrfrd.me/lifx'>
-                        <img class='lifx-img' src='lifx.png'>
-                        <h1 class='lifx-quote'>WEB CONTROL</h1>
-                    </a>
-                </article>
-                <article class='ryn-things-half right tasks'>
-                    <a href='https://ryncmrfrd.me/tasks' class='tasks-span'>
-                        <img class='tasks-icon' src='tasks.png'>
-                        <h1 class='tasks-title'>WEB<br><strong style='color: #407ce6;'>TASKS</strong></h1>
-                    </a>
-                </article>
-                <article class='ryn-things-full safc'>
-                    <img class='safc-img' src='safc.png'>
-                    <a href='https://sunderlandafc.tv'>
-                        <h1 class='safc-title'><strong style='color: white;'>SUNDERLAND</strong>AFC.TV</h1>
-                        <p class='safc-quote'>The definitive retro Sunderland fan site.</p>
-                    </a>
-                </article>
-                <article class='ryn-things-half left compass'>
-                    <a href='https://ryncmrfrd.me/compass'>
-                        <img class='compass-logo' src='compass.png'>
-                        <h1 class='compass-title'>Redesigned UI</strong></h1>
-                    </a>
-                </article>
-                <article class='ryn-things-half right pascal'>
-                    <a href='https://ryncmrfrd.me/pascal' class='pascal-link'>
-                        <div class="pascal-triangle"><p>1<br>1,1<br>1,2,1<br>1,3,3,1<br>1,4,6,4,1<br>1,5,10,10,5,1</p></div>
-                        <h1 class='pascal-title'>Pascal's<br>Triangle</h1>
-                    </a>
-                </article>
-            </div>
-        </section>
+        <button onclick="scrollDown()" class="home-arrow-button"><div class="home-arrow"></div></button>
+    </main>
+    <div id='particles'></div>
+    <section class='things-wrapper'>
+        <div class="things-header">
+            <h1 class="things-header-title">Things I've Made</h1>
+            <p class="things-header-quote">Just click on them to view the whole project.</p>
+        </div>
+        <div class='things-body'>
+            <article class='things-lifx'>
+                <a href='https://ryncmrfrd.me/lifx' target='_blank'>
+                    <img class='things-lifx-img' src='build/img/lifx.png'>
+                    <h1 class='things-lifx-quote'>WEB CONTROL</h1>
+                </a>
+            </article>
+            <article class='things-tasks'>
+                <a href='https://ryncmrfrd.me/tasks' class='things-tasks-span' target='_blank'>
+                    <img class='things-tasks-icon' src='build/img/tasks.png'>
+                    <h1 class='things-tasks-title'>WEB<br><strong style='color: #407ce6;'>TASKS</strong></h1>
+                </a>
+            </article>
+            <article class='things-safc'>
+                <img class='things-safc-img' src='build/img/safc.png'>
+                <a href='https://sunderlandafc.tv' target='_blank'>
+                    <h1 class='things-safc-title'><strong style='color: white;'>SUNDERLAND</strong>AFC.TV</h1>
+                    <p class='things-safc-quote'>The definitive retro Sunderland fan site.</p>
+                </a>
+            </article>
+            <article class='things-compass'>
+                <a href='https://ryncmrfrd.me/compass' target='_blank'>
+                    <img class='things-compass-logo' src='build/img/compass.png'>
+                    <h1 class='things-compass-title'>Redesigned UI</strong></h1>
+                </a>
+            </article>
+            <article class='things-pascal'>
+                <a href='https://ryncmrfrd.me/pascal' class='things-pascal-link' target='_blank'>
+                    <div class="things-pascal-triangle">
+                        <p>1<br>1,1<br>1,2,1<br>1,3,3,1<br>1,4,6,4,1<br>1,5,10,10,5,1</p>
+                    </div>
+                    <h1 class='things-pascal-title'>Pascal's<br>Triangle</h1>
+                </a>
+            </article>
+        </div>
+    </section>
     <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src='index.js'></script>
 </body>
-<script>$(document).ready(function(){$(this).scrollTop(0);});</script>
+<script>
+    particlesJS("particles", {"particles":{"number":{"value":160,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":4,"size_min":0.3,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"bubble"},"onclick":{"enable":false,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":false});
+    function scrollDown(){$([document.documentElement,document.body]).animate({scrollTop:$(".things-wrapper").offset().top},250);}$(document).ready(function(){$(this).scrollTop(0);});
+</script>
 </html>
