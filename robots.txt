@@ -2,8 +2,4 @@
 User-agent: *
 Allow: /
 
-# Rule 2
-User-agent: *
-Disallow: /build
-
 Sitemap: http://ryncmrfrd.me/build/sitemap.xml
