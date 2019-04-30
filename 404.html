@@ -6,19 +6,24 @@
     <meta name="msapplication-TileColor" content="#0077cc">
     <meta name="google-site-verification" content="RaC2oR0K9ddINZenIO5-QUL_Zx46XdFiMiNqpAalO2Q" />
     <link rel="shortcut icon" type="image/png" href="build/favicon.png" />
-    <link rel='stylesheet' href='build/css/style.css'>
+    <link rel="stylesheet" href="build/css/style.css">
 </head>
-<body style='overflow: hidden'>
-    <section class='mobile-wrapper'>
-        <h1><strong>Your device is too small, </strong>please use a computer.</h1>
-    </section>
-    <main class="home-wrapper">
-        <h1 class="home-title" style="font-size: 10em;">404</h1>
-        <p class="home-quote">That page could not be found.</p>
+<body style="overflow: hidden">
+    <main class="section landing-wrapper">
+        <div class="landing-content">
+            <h1 class="landing-title" style="font-size: 10em">404</h1>
+            <p class="landing-subtitle">That page could not be found.</p>
+            <div class="landing-links">
+                <a class="link" href="https://github.com/ryncmrfrd" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="link" href="https://twitter.com/lordfennec" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="link" href="https://instagram.com/ryncmrfrd" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="link" href="mailto:ryncmrfrd@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <button id="down-arrow"><i class="fas fa-chevron-down"></i></button>
+        <div id="landing-particles"></div>
     </main>
-    <div id='particles'></div>
-    <script src='build/js/jquery.js'></script>
-    <script src='build/js/particles.js'></script>
-    <script>particlesJS("particles",{particles:{number:{value:160,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:1,random:!0,anim:{enable:!0,speed:1,opacity_min:0,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:4,size_min:.3,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:1,direction:"none",random:!0,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:600}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!1,mode:"bubble"},onclick:{enable:!1,mode:"repulse"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:250,size:0,duration:2,opacity:0,speed:3},repulse:{distance:400,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!1});$(window).resize(function(){if($(window).width()<280){$(document).scrollTop(0)}});</script>
+    <script src="build/js/particles.js"></script>
+    <script>new particlesJS("landing-particles",{particles:{number:{value:160,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:1,random:!0,anim:{enable:!0,speed:1,opacity_min:0,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:4,size_min:.3,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:1,direction:"none",random:!0,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:600}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!1,mode:"bubble"},onclick:{enable:!1,mode:"repulse"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:250,size:0,duration:2,opacity:0,speed:3},repulse:{distance:400,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!1});</script>
 </body>
 </html>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Ryan Comerford - ryncmrfrd.me</title>
+    <title>Ryan Comerford</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Ryan Comerford - ryncmrfrd.me">
+    <meta name="title" content="Ryan Comerford">
     <meta name="description" content="Hi, I'm Ryan, and this is my neato personal website.">
     <meta name="keywords" content="Ryan Comerford,Profile,Web,CSS,HTML,JS,ryncmrfrd">
     <meta name="author" content="Ryan Comerford">
@@ -11,74 +12,81 @@
     <meta name="msapplication-TileColor" content="#0077cc">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ryncmrfrd.me/">
-    <meta property="og:title" content="Ryan Comerford - ryncmrfrd.me">
+    <meta property="og:title" content="Ryan Comerford">
     <meta property="og:description" content="Hi, I'm Ryan, and this is my neato personal website.">
     <meta property="og:image" content="https://ryncmrfrd.me/build/img/screenshot.png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ryncmrfrd.me/">
-    <meta property="twitter:title" content="Ryan Comerford - ryncmrfrd.me">
+    <meta property="twitter:title" content="Ryan Comerford">
     <meta property="twitter:description" content="Hi, I'm Ryan, and this is my neato personal website.">
     <meta property="twitter:image" content="https://ryncmrfrd.me/build/img/screenshot.png">
     <meta name="google-site-verification" content="RaC2oR0K9ddINZenIO5-QUL_Zx46XdFiMiNqpAalO2Q" />
     <link rel="shortcut icon" type="image/png" href="build/favicon.png" />
-    <link rel='stylesheet' href='build/css/style.css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="build/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <section class='mobile-wrapper'>
-        <h1><strong>Your device is too small, </strong>please use a computer.</h1>
-    </section>
-    <main class="home-wrapper">
-        <h1 class="home-title">Hi, I'm Ryan</h1>
-        <p class="home-quote">I make things on the internet.</p>
-        <div class="home-links">
-            <a href="https://github.com/ryncmrfrd" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/lordfennec" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com/ryncmrfrd" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:ryncmrfrd@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        </div>
-        <button class="home-arrow-button"><div class="home-arrow"></div></button>
-    </main>
-    <div id='particles'></div>
-    <section class='things-wrapper'>
-        <div class="things-header">
-            <h1 class="things-header-title">Things I've Made</h1>
-            <p class="things-header-quote">lick on them to view the whole project.</p>
-        </div>
-        <div class='things-body'>
-            <article class='things-safc'>
-                <a href='https://sunderlandafc.tv' target='_blank'>
-                    <img class='things-safc-img' src='build/img/safc.png'>
+    <main id="pageWrapper">
+        <section class="section landing-wrapper">
+            <div class="landing-content">
+                <h1 class="landing-title">Hi, I'm Ryan</h1>
+                <p class="landing-subtitle">I make things on the internet.</p>
+                <div class="landing-links">
+                    <a class="link" href="https://github.com/ryncmrfrd" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="link" href="https://twitter.com/lordfennec" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="link" href="https://instagram.com/ryncmrfrd" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="link" href="mailto:ryncmrfrd@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <button id="down-arrow"><i class="fas fa-chevron-down"></i></button>
+            <div id="landing-particles"></div>
+        </section>
+        <section id="projects" class="section projects-wrapper">
+            <header>
+                <div class="header-content">
+                    <h1 class="header-title">Small Projects</h1>
+                    <p class="header-description">Little things I've knocked up in an afternoon<br> and don't really expect people to ever see or use.</p>
+                </div>
+                <div class="header-content">
+                    <h1 class="header-title">Large Projects</h1>
+                    <p class="header-description">Full, proper projects that, to put<br> it crudely, I actually give a <strong class="brown"><i class="fas fa-poo"></i></strong> about.</p>
+                </div>
+            </header>
+            <div class="projects-wrapper">
+                <a class="project pascal" href="https://ryncmrfrd.me/pascal" target="_blank">
+                    <p class="pascal">1<br>1,1<br>1,2,1<br>1,3,3,1<br>1,4,6,4,1<br>1,5,10,10,5,1</p>
+                    <h1 class="pascal">Pascal's Triangle</h1>
+                </a>
+                <a class="project lifx" href="https://lifx.ryncmrfrd.me" target="_blank">
+                    <img class="lifx" src="build/img/lifx.png">
+                    <h1 class="lifx">WEB CONTROL</h1>
+                </a>
+                <a class="project lp" href="https://github.com/ryncmrfrd/lp" target="_blank">
+                    <img class="lp" src="build/img/lp.png">
+                    <h1 class="lp">Auto Answer <strong style="color: #0eade4; font-weight: bold;">Chrome Extention</strong></h1>
+                </a>
+                <a class="project safc" href="https://sunderlandafc.tv" target="_blank">
+                    <img class="safc" src="build/img/safc.png">
                     <div>
-                        <h1 class='things-safc-title'><strong style='color: white;'>SUNDERLAND</strong>AFC.TV</h1>
-                        <p class='things-safc-quote'>The definitive retro Sunderland fan site.</p>
+                        <h1 class="safc"><strong style="color: white;">SUNDERLAND</strong>AFC.TV</h1>
+                        <p class="safc">The definitive retro Sunderland fan site.</p>
                     </div>
                 </a>
-            </article>
-            <article class='things-lifx'>
-                <a href='https://lifx.ryncmrfrd.me' target='_blank'>
-                    <img class='things-lifx-img' src='build/img/lifx.png'>
-                    <h1 class='things-lifx-quote'>WEB CONTROL</h1>
+                <a class="project compass" href="https://ryncmrfrd.me/compass/" target="_blank">
+                    <img class="compass" src="build/img/compass.png">
+                    <h1 class="compass">Redesigned UI</strong></h1>
                 </a>
-            </article>
-            <article class='things-pascal'>
-                <a href='https://ryncmrfrd.me/pascal' class='things-pascal-link' target='_blank'>
-                    <div class="things-pascal-triangle">
-                        <p>1<br>1,1<br>1,2,1<br>1,3,3,1<br>1,4,6,4,1<br>1,5,10,10,5,1</p>
+                <a class="project tasks" href="https://tasks.ryncmrfrd.me" target="_blank">
+                    <div class="tasks">
+                        <img class="tasks" src="build/img/tasks.png">
+                        <h1 class="tasks">WEB<br><strong style="color: #407ce6;">TASKS</strong></h1>
                     </div>
-                    <h1 class='things-pascal-title'>Pascal's<br>Triangle</h1>
                 </a>
-            </article>
-            <article class='things-tasks'>
-                <a href='https://tasks.ryncmrfrd.me' class='things-tasks-span' target='_blank'>
-                    <img class='things-tasks-icon' src='build/img/tasks.png'>
-                    <h1 class='things-tasks-title'>WEB<br><strong style='color: #407ce6;'>TASKS</strong></h1>
-                </a>
-            </article>
-        </div>
-    </section>
-    <script src='build/js/jquery.js'></script>
-    <script src='build/js/particles.js'></script>
-    <script>$('.home-arrow-button').click(function(){$([document.documentElement,document.body]).animate({scrollTop:$(".things-wrapper").offset().top},250)});particlesJS("particles",{particles:{number:{value:160,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:1,random:!0,anim:{enable:!0,speed:1,opacity_min:0,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:4,size_min:.3,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:1,direction:"none",random:!0,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:600}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!1,mode:"bubble"},onclick:{enable:!1,mode:"repulse"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:250,size:0,duration:2,opacity:0,speed:3},repulse:{distance:400,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!1});$(window).resize(function(){if($(window).width()<280){$(document).scrollTop(0)}});</script>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="build/js/fullpage.js"></script>
+    <script type="text/javascript" src="build/js/particles.js"></script>
+    <script>new fullpage("#pageWrapper",{anchors:['landing','things']});new particlesJS("landing-particles",{particles:{number:{value:160,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:1,random:!0,anim:{enable:!0,speed:1,opacity_min:0,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:4,size_min:.3,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:1,direction:"none",random:!0,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:600}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!1,mode:"bubble"},onclick:{enable:!1,mode:"repulse"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:250,size:0,duration:2,opacity:0,speed:3},repulse:{distance:400,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!1});window.location.href="#";document.getElementById("down-arrow").onclick=function(){window.location.href="#things"}</script>
 </body>
-</html>
+</html> 
