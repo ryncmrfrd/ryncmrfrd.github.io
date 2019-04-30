@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
+    <section id="mobile">
+        <h1><strong>Your device is too small, </strong>please use a computer.</h1>
+    </section>
     <main id="pageWrapper">
         <section class="section landing-wrapper">
             <div class="landing-content">
@@ -38,7 +41,7 @@
                     <a class="link" href="mailto:ryncmrfrd@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-            <button id="down-arrow"><i class="fas fa-chevron-down"></i></button>
+            <div id="down-arrow"><i class="fas fa-chevron-down"></i></div>
             <div id="landing-particles"></div>
         </section>
         <section id="projects" class="section projects-wrapper">
@@ -84,9 +87,78 @@
                 </a>
             </div>
         </section>
+        <section id="mobileprojects" class="section">
+            <div class="mobile slide">
+                <header>
+                    <div class="header-content">
+                        <h1 class="header-title">Small Projects</h1>
+                        <p class="header-description">Little things I've knocked up in an afternoon<br> and don't really expect people to ever see or use.</p>
+                    </div>
+                    <div class="header-content">
+                        <h1 class="header-title">Large Projects</h1>
+                        <p class="header-description">Full, proper projects that, to put<br> it crudely, I actually give a <strong class="brown"><i class="fas fa-poo"></i></strong> about.</p>
+                    </div>
+                </header>
+                <div class="projects-wrapper">
+                    <a class="project pascal" href="https://ryncmrfrd.me/pascal" target="_blank">
+                        <div>
+                            <p class="pascal">1<br>1,1<br>1,2,1<br>1,3,3,1<br>1,4,6,4,1<br>1,5,10,10,5,1</p>
+                            <h1 class="pascal">Pascal's Triangle</h1>
+                        </div>
+
+                    </a>
+                    <a class="project lp" href="https://github.com/ryncmrfrd/lp" target="_blank">
+                        <div>
+                            <img class="lp" src="build/img/lp.png">
+                            <h1 class="lp">Auto Answer <strong style="color: #0eade4; font-weight: bold;">Chrome Extention</strong></h1>
+                        </div>
+                    </a>
+                    <a class="project compass" href="https://ryncmrfrd.me/compass/" target="_blank">
+                        <div>
+                            <img class="compass" src="build/img/compass.png">
+                            <h1 class="compass">Redesigned UI</strong></h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+             <div class="mobile slide">
+                <header>
+                    <div class="header-content">
+                        <h1 class="header-title">Large Projects</h1>
+                        <p class="header-description">Full, proper projects that, to put<br> it crudely, I actually give a <strong class="brown"><i class="fas fa-poo"></i></strong> about.</p>
+                    </div>
+                </header>
+                <div class="projects-wrapper">
+                    <a class="project lifx" href="https://lifx.ryncmrfrd.me" target="_blank">
+                        <div>
+                            <img class="lifx" src="build/img/lifx.png">
+                            <h1 class="lifx">WEB CONTROL</h1>
+                        </div>
+
+                    </a>
+                    <a class="project safc" href="https://sunderlandafc.tv" target="_blank">
+                        <div>
+                            <img class="safc" src="build/img/safc.png">
+                            <div>
+                                <h1 class="safc"><strong style="color: white;">SUNDERLAND</strong>AFC.TV</h1>
+                                <p class="safc">The definitive retro Sunderland fan site.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project tasks" href="https://tasks.ryncmrfrd.me" target="_blank">
+                        <div>
+                            <div class="tasks">
+                                <img class="tasks" src="build/img/tasks.png">
+                                <h1 class="tasks">WEB<br><strong style="color: #407ce6;">TASKS</strong></h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
     <script type="text/javascript" src="build/js/fullpage.js"></script>
     <script type="text/javascript" src="build/js/particles.js"></script>
-    <script>new fullpage("#pageWrapper",{anchors:['landing','things']});new particlesJS("landing-particles",{particles:{number:{value:160,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:1,random:!0,anim:{enable:!0,speed:1,opacity_min:0,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:4,size_min:.3,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:1,direction:"none",random:!0,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:600}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!1,mode:"bubble"},onclick:{enable:!1,mode:"repulse"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:250,size:0,duration:2,opacity:0,speed:3},repulse:{distance:400,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!1});window.location.href="#";document.getElementById("down-arrow").onclick=function(){window.location.href="#things"}</script>
+    <script>new fullpage("#pageWrapper");new particlesJS("landing-particles",{particles:{number:{value:160,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:1,random:!0,anim:{enable:!0,speed:1,opacity_min:0,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:4,size_min:.3,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:1,direction:"none",random:!0,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:600}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!1,mode:"bubble"},onclick:{enable:!1,mode:"repulse"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:250,size:0,duration:2,opacity:0,speed:3},repulse:{distance:400,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!1});</script>
 </body>
 </html> 
