@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://ryncmrfrd.me/build/sitemap.xml
+Sitemap: http://ryncmrfrd.com/build/sitemap.xml
