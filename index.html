@@ -2,108 +2,66 @@
 <html lang="en">
 <head>
     <title>Ryan Comerford</title>
+
+    <!-- Data/Meta -->
+    <link rel="manifest" href="/manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Ryan Comerford">
-    <meta name="description" content="Hi, I'm Ryan, and this is my website.">
-    <meta name="keywords" content="Ryan Comerford,Profile,Web,CSS,HTML,JS,ryncmrfrd">
+    <meta name="description" content="Hi, I'm Ryan and I make funky web things.">
+    <meta name="keywords" content="Ryan Comerford,Profile,Web,CSS,HTML,JS,ryncmrfrd,ryncmrfrd.com">
     <meta name="author" content="Ryan Comerford">
-    <meta name="theme-color" content="#0077cc">
-    <meta name="msapplication-TileColor" content="#0077cc">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ryncmrfrd.com/">
     <meta property="og:title" content="Ryan Comerford">
-    <meta property="og:description" content="Hi, I'm Ryan, and this is m website.">
-    <meta property="og:image" content="https://ryncmrfrd.com/build/img/screenshot.png">
+    <meta property="og:description" content="Hi, I'm Ryan and I make funky web things.">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ryncmrfrd.com/">
     <meta property="twitter:title" content="Ryan Comerford">
-    <meta property="twitter:description" content="Hi, I'm Ryan, and this is my website.">
-    <meta property="twitter:image" content="https://ryncmrfrd.com/build/img/screenshot.png">
+    <meta property="twitter:description" content="Hi, I'm Ryan and I make funky web things.">
     <meta name="google-site-verification" content="RaC2oR0K9ddINZenIO5-QUL_Zx46XdFiMiNqpAalO2Q" />
-    <link rel="shortcut icon" type="image/png" href="build/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="build/style.css" />
+
+    <!-- Favicons/Icons -->
+    <meta name="theme-color" content="#0077cc">
+    <meta name="msapplication-TileColor" content="#0077cc">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="build/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="build/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="build/style.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" integrity="sha256-39jKbsb/ty7s7+4WzbtELS4vq9udJ+MDjGTD5mtxHZ0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
 </head>
 <body>
-    <section id="mobile">
-        <h1><strong>Your device is too small, </strong>please use a computer.</h1>
-    </section>
-    <main id="pageWrapper">
-        <section class="section landing-wrapper">
-            <div class="landing-content">
-                <h1 class="landing-title">Hi, I'm Ryan</h1>
-                <p class="landing-subtitle">I make things on the internet.</p>
-                <div class="landing-links">
-                    <a class="link" href="https://github.com/ryncmrfrd" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="link" href="https://twitter.com/ryncmrfrd" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="link" href="https://instagram.com/ryncmrfrd" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a class="link" href="mailto:ryncmrfrd@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <a href="#things" id="down-arrow"><i class="fas fa-chevron-down"></i></a>
-            <div id="landing-particles"></div>
-        </section>
-        <section id="projects" class="section projects-wrapper">
-            <div class="projects-wrapper">
-                    <div id="projects-left" class="projects-column left">
-                            <div class="header">
-                                <h1 class="header-title">Large Projects</h1>
-                                <p class="header-description">Full, proper projects that, to put<br> it crudely, I actually give a <strong class="brown"><i class="fas fa-poo"></i></strong> about.</p>
-                            </div>
-                            <div class="content">
-                                <a class="project lifx" href="https://lifx.ryncmrfrd.com" target="_blank">
-                                    <div>
-                                        <img class="lifx" src="build/img/lifx.png">
-                                        <h1 class="lifx">WEB CONTROL</h1>
-                                    </div>
-                                </a>
-                                <a class="project safc" href="https://sunderlandafc.tv" target="_blank">
-                                    <div>
-                                        <img class="safc" src="build/img/safc.png">
-                                        <div>
-                                            <h1 class="safc"><strong style="color: white;">SUNDERLAND</strong>AFC.TV</h1>
-                                            <p class="safc">The definitive retro Sunderland fan site.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="project tasks" href="https://tasks.ryncmrfrd.com" target="_blank">
-                                    <div class="tasks">
-                                        <img class="tasks" src="build/img/tasks.png">
-                                        <h1 class="tasks">WEB<br><strong style="color: #407ce6;">TASKS</strong></h1>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                <div id="projects-right" class="projects-column right">
-                    <div class="header">
-                        <h1 class="header-title">Small Projects</h1>
-                        <p class="header-description">Little things I've knocked up in an afternoon<br> and don't really expect people to ever see or use.</p>
-                    </div>
-                    <div class="content">
-                        <a class="project pascal" href="https://pascal.ryncmrfrd.com" target="_blank">
-                            <p class="pascal">1<br>1,1<br>1,2,1<br>1,3,3,1<br>1,4,6,4,1<br>1,5,10,10,5,1</p>
-                            <h1 class="pascal">Pascal's Triangle</h1>
-                        </a>
-                        <a class="project lp" href="https://github.com/ryncmrfrd/lp#education-perfect-auto-answerer" target="_blank">
-                            <div>
-                                <img class="lp" src="build/img/lp.png">
-                                <h1 class="lp">Auto Answer <strong style="color: #0eade4; font-weight: bold;">Chrome Extention</strong></h1>
-                            </div>
-                        </a>
-                        <a class="project compass" href="https://compass.ryncmrfrd.com/" target="_blank">
-                            <div>
-                                <img class="compass" src="build/img/compass.png">
-                                <h1 class="compass">Redesigned UI</strong></h1>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script type="text/javascript" src="build/js/fullpage.js"></script>
-    <script type="text/javascript" src="build/js/particles.js"></script>
-    <script type="text/javascript" src="build/js/home.js"></script>
+
+    <!-- LANDING -->
+    <div class="contentCenter">
+        <h1 class="title">Hi, I'm <b>Ryan</b></h1>
+    </div>
+
+    <!-- SOCIAL LINKS -->
+    <div class="contentBottom">
+        <a class="link" href="https://github.com/ryncmrfrd" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="link" href="https://twitter.com/ryncmrfrd" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="link" href="https://instagram.com/ryncmrfrd" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="link" href="mailto:ryncmrfrd@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- AUTO DARK MODE TOGGLE -->
+    <script>const hour=new Date().getHours();(hour>18||hour<7)?document.documentElement.setAttribute('data-theme','dark'):document.documentElement.setAttribute('data-theme','light')</script>
+
 </body>
-</html> 
+</html>
