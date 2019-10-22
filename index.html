@@ -4,7 +4,6 @@
     <title>Ryan Comerford</title>
 
     <!-- Data/Meta -->
-    <link rel="manifest" href="/manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Ryan Comerford">
@@ -42,12 +41,12 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="build/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" integrity="sha256-39jKbsb/ty7s7+4WzbtELS4vq9udJ+MDjGTD5mtxHZ0=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 </head>
 <body>
 
-    <div class="switch-wrapper">
+    <!-- DARK MODE SWITCH -->
+    <div class="switchWrapper">
         <input id="switch" type="checkbox" hidden />
         <label for="switch" class="switch"></label>
     </div>
@@ -65,16 +64,11 @@
         <a class="link" href="mailto:ryncmrfrd@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
     </div>
 
-    <!-- AUTO DARK MODE TOGGLE -->
+    <!-- DARK MODE JS -->
     <script>
-        const hour=new Date().getHours();
-        (hour > 18 || hour < 7) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light');
+        const hour = new Date().getHours(); (hour > 18 || hour < 7) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light');
         document.getElementById("switch").checked = (document.documentElement.getAttribute("data-theme") == "dark");
-
-        document.getElementById("switch").addEventListener("change", e => {
-            if(e.target.checked) document.documentElement.setAttribute('data-theme','dark')
-            else document.documentElement.setAttribute('data-theme','light')
-        })
+        document.getElementById("switch").addEventListener("change", e => (e.target.checked) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light') );
     </script>
 
 </body>

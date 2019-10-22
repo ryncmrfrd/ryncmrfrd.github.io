@@ -123,7 +123,7 @@ html[data-theme="dark"]{
 
 /* -------------- DARK MODE TOGGLE -------------- */
 
-.switch-wrapper{
+.switchWrapper{
     position: absolute;
     right: 10px;
     top: 10px;
@@ -142,6 +142,7 @@ html[data-theme="dark"]{
     user-select: none;
     transition: background 350ms ease;
 }
+
 .switch:before, .switch:after {
     content: "";
     display: block;

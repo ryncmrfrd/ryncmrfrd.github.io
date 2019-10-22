@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>404 | Ryan Comerford</title>
+
+    <!-- Favicons/Icons -->
+    <meta name="theme-color" content="#0077cc">
+    <meta name="msapplication-TileColor" content="#0077cc">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="build/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="build/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="build/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" integrity="sha256-39jKbsb/ty7s7+4WzbtELS4vq9udJ+MDjGTD5mtxHZ0=" crossorigin="anonymous" />
+
+</head>
+<body>
+
+    <!-- DARK MODE SWITCH -->
+    <div class="switchWrapper">
+        <input id="switch" type="checkbox" hidden/>
+        <label for="switch" class="switch"></label>
+    </div>
+
+    <!-- LANDING -->
+    <div class="contentCenter">
+        <h1 class="title">Error <b>404</b></h1>
+    </div>
+
+    <!-- SOCIAL LINKS -->
+    <div class="contentBottom">
+        <a class="link" href="/" target="_blank"><i class="fas fa-home"></i></a>
+    </div>
+
+    <!-- DARK MODE JS -->
+    <script>
+        const hour = new Date().getHours(); (hour > 18 || hour < 7) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light');
+        document.getElementById("switch").checked = (document.documentElement.getAttribute("data-theme") == "dark");
+        document.getElementById("switch").addEventListener("change", e => (e.target.checked) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light') );
+    </script>
+
+</body>
+</html>
