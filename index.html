@@ -3,24 +3,24 @@
 <head>
     <title>Ryan Comerford</title>
 
-    <!-- Data/Meta -->
+    <!-- DATA/META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Ryan Comerford">
-    <meta name="description" content="Hi, I'm Ryan and I make funky web things.">
+    <meta name="description" content="Hi, I'm Ryan and I make websites.">
     <meta name="keywords" content="Ryan, Comerford, Ryan Comerford,Profile,Web,CSS,HTML,JS,ryncmrfrd,ryncmrfrd.com">
     <meta name="author" content="Ryan Comerford">
     <meta property="og:type" content="website">
     <meta property="og:url" content="ryncmrfrd.com">
     <meta property="og:title" content="Ryan Comerford">
-    <meta property="og:description" content="Hi, I'm Ryan and I make funky web things.">
+    <meta property="og:description" content="Hi, I'm Ryan and I make websites.">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="ryncmrfrd.com">
     <meta property="twitter:title" content="Ryan Comerford">
-    <meta property="twitter:description" content="Hi, I'm Ryan and I make funky web things.">
+    <meta property="twitter:description" content="Hi, I'm Ryan and I make websites.">
     <meta name="google-site-verification" content="RaC2oR0K9ddINZenIO5-QUL_Zx46XdFiMiNqpAalO2Q" />
 
-    <!-- Favicons/Icons -->
+    <!-- FAVICONS/ICONS -->
     <meta name="theme-color" content="#0077cc">
     <meta name="msapplication-TileColor" content="#0077cc">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -39,14 +39,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="build/style.min.css" />
+    <link rel=stylesheet type="text/css" href="build/style.css" />
 
 </head>
 <body>
 
     <!-- DARK MODE SWITCH -->
     <div class="switchWrapper">
-        <input id="switch" type="checkbox" hidden />
+        <input id="switch" type="checkbox" hidden aria-label="Toggle dark mode" />
         <label for="switch" class="switch"></label>
     </div>
 
@@ -57,18 +57,15 @@
 
     <!-- SOCIAL LINKS -->
     <div class="contentBottom">
-        <a class="link" href="https://github.com/ryncmrfrd" rel="noopener" target="_blank" aria-label="My Github"><span class="icon-github"></span></a>
-        <a class="link" href="https://twitter.com/ryncmrfrd" rel="noopener" target="_blank" aria-label="My Twitter"><span class="icon-twitter"></span></a>
-        <a class="link" href="https://instagram.com/ryncmrfrd" rel="noopener" target="_blank" aria-label="My Instagram"><span class="icon-instagram"></span></a>
-        <a class="link" href="mailto:ryncmrfrd@outlook.com" rel="noopener" target="_blank" aria-label="My Email"><span class="icon-envelop"></span></a>
+        <a class="link" href="https://github.com/ryncmrfrd" rel="noopener" target="_blank" aria-label="My Github"><i class="fab fa-github"></i></a>
+        <a class="link" href="https://twitter.com/ryncmrfrd" rel="noopener" target="_blank" aria-label="My Twitter"><i class="fab fa-twitter"></i></a>
+        <a class="link" href="https://instagram.com/ryncmrfrd" rel="noopener" target="_blank" aria-label="My Instagram"><i class="fab fa-instagram"></i></a>
+        <a class="link" href="mailto:ryncmrfrd@outlook.com" rel="noopener" target="_blank" aria-label="My Email"><i class="far fa-envelope"></i></a>
     </div>
 
     <!-- DARK MODE JS -->
-    <script>
-        const hour = new Date().getHours(); (hour > 18 || hour < 7) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light');
-        document.getElementById("switch").checked = (document.documentElement.getAttribute("data-theme") == "dark");
-        document.getElementById("switch").addEventListener("change", e => (e.target.checked) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light') );
-    </script>
+    <script src="./build/darkmode.js" async></script>
+    <script src="https://kit.fontawesome.com/63039f3aff.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

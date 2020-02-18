@@ -6,6 +6,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 body,
 html {
+    height: 100vh !important;
+    width: 100vw !important;
+    margin: 0  !important;
+    padding: 0 !important;
+    overflow: hidden;
     background-color: var(--white);
     -webkit-transition: background-color .5s;
          -o-transition: background-color .5s;
@@ -16,11 +21,13 @@ html {
 html[data-theme="light"]{
     --black: #000;
     --white: #fff;
+    font-weight: normal;
 }
 
 html[data-theme="dark"]{
     --black: #e6e6e6;
     --white: #202020;
+    font-weight: lighter;
 }
 
 /* -------------- GENERAL PAGE -------------- */
@@ -29,6 +36,9 @@ html[data-theme="dark"]{
     position: absolute;
     top: 45%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: tran 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -78,27 +88,39 @@ html[data-theme="dark"]{
     text-decoration: none;
 }
 
-.contentBottom a span{
+.contentBottom a i{
     color: var(--black);
     -webkit-transition: color .2s ease-in-out;
          -o-transition: color .2s ease-in-out;
             transition: color .2s ease-in-out
 }
 
-.contentBottom a:hover:nth-of-type(1) span{
-    color: #6e5494;
+.contentBottom a:hover:nth-of-type(1) i{ color: #6e5494 }
+.contentBottom a:focus:nth-of-type(1){ outline: 1px solid #6e5494 }
+.contentBottom a:focus:nth-of-type(1) i{
+    -webkit-box-shadow: 0px 11px 101px 31px #6e5494;
+            box-shadow: 0px 11px 101px 31px #6e5494;
 }
 
-.contentBottom a:hover:nth-of-type(2) span{
-    color: #1da1f2;   
+.contentBottom a:hover:nth-of-type(2) i{ color: #1da1f2 }
+.contentBottom a:focus:nth-of-type(2){ outline: 1px solid #1da1f2 }
+.contentBottom a:focus:nth-of-type(2) i{
+    -webkit-box-shadow: 0px 11px 101px 31px #1da1f2;
+            box-shadow: 0px 11px 101px 31px #1da1f2;
 }
 
-.contentBottom a:hover:nth-of-type(3) span{
-    color: #dd2a7b;
+.contentBottom a:hover:nth-of-type(3) i{ color: #dd2a7b }
+.contentBottom a:focus:nth-of-type(3){ outline: 1px solid #dd2a7b }
+.contentBottom a:focus:nth-of-type(3) i{
+    -webkit-box-shadow: 0px 11px 101px 31px #dd2a7b;
+            box-shadow: 0px 11px 101px 31px #dd2a7b;
 }
 
-.contentBottom a:hover:nth-of-type(4) span{
-    color: #ea4335;
+.contentBottom a:hover:nth-of-type(4) i{ color: #0077cc }
+.contentBottom a:focus:nth-of-type(4){ outline: 1px solid #0077cc }
+.contentBottom a:focus:nth-of-type(4) i{
+    -webkit-box-shadow: 0px 11px 101px 31px #0077cc;
+            box-shadow: 0px 11px 101px 31px #0077cc;
 }
 
 @-webkit-keyframes changeGradient {
@@ -111,52 +133,6 @@ html[data-theme="dark"]{
 	0% { background-position: 0% 50%; color: #009dd0; }
 	50% { background-position: 100% 50%; color: #e73c7e; }
 	100% { background-position: 0% 50%; color: #ee7752; }
-}
-
-/* ICONS */
-
-@font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?ejo7wx');
-    src:  url('fonts/icomoon.eot?ejo7wx#iefix') format('embedded-opentype'),
-          url('fonts/icomoon.ttf?ejo7wx') format('truetype'),
-          url('fonts/icomoon.woff?ejo7wx') format('woff'),
-          url('fonts/icomoon.svg?ejo7wx#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-} 
-  
-[class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-  
-.icon-home:before {
-    content: "\e900";
-}
-
-.icon-envelop:before {
-    content: "\e945";
-}
-
-.icon-instagram:before {
-    content: "\ea92";
-}
-
-.icon-twitter:before {
-    content: "\ea96";
-}
-
-.icon-github:before {
-    content: "\eab0";
 }
 
 /* -------------- DARK MODE TOGGLE -------------- */
@@ -177,7 +153,12 @@ html[data-theme="dark"]{
     vertical-align: middle;
     position: relative;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: background 350ms ease;
+    -o-transition: background 350ms ease;
     transition: background 350ms ease;
 }
 
@@ -189,21 +170,26 @@ html[data-theme="dark"]{
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+    -webkit-transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+         -o-transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+            transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
 }
 
 .switch:before {
     background: rgba(204, 204, 204, 0.075);
-    transform: translate3d(0, -50%, 0) scale(0);
+    -webkit-transform: translate3d(0, -50%, 0) scale(0);
+            transform: translate3d(0, -50%, 0) scale(0);
 }
 
 .switch:after {
     background: white;
-    transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
 }
 
 .switch:active:before {
-    transform: translate3d(0, -50%, 0) scale(3);
+    -webkit-transform: translate3d(0, -50%, 0) scale(3);
+            transform: translate3d(0, -50%, 0) scale(3);
 }
 
 input:checked + .switch {
@@ -212,17 +198,20 @@ input:checked + .switch {
 
 input:checked + .switch:before {
     background: rgba(59, 59, 59, 0.075);
-    transform: translate3d(100%, -50%, 0) scale(1);
+    -webkit-transform: translate3d(100%, -50%, 0) scale(1);
+            transform: translate3d(100%, -50%, 0) scale(1);
 }
 
 input:checked + .switch:after {
     background: #3b3b3b;
-    transform: translate3d(100%, -50%, 0);
+    -webkit-transform: translate3d(100%, -50%, 0);
+            transform: translate3d(100%, -50%, 0);
 }
 
 input:checked + .switch:active:before {
     background: rgba(59, 59, 59, 0.075);
-    transform: translate3d(100%, -50%, 0) scale(3);
+    -webkit-transform: translate3d(100%, -50%, 0) scale(3);
+            transform: translate3d(100%, -50%, 0) scale(3);
 }
 
 /* -------------- RESPONSIVE DESIGN -------------- */
