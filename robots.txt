@@ -1,6 +1,5 @@
 # Rule 1
 User-agent: *
 Allow: /
-Disalow: /amithibault
 
 Sitemap: http://ryncmrfrd.com/build/sitemap.xml
