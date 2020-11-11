@@ -3,6 +3,10 @@
 <head>
     <title>404 | Ryan Comerford</title>
 
+    <!-- DATA/META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- FAVICONS/ICONS -->
     <meta name="theme-color" content="#0077cc">
     <meta name="msapplication-TileColor" content="#0077cc">
@@ -22,14 +26,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="build/style.css" />
-
+    <link rel=stylesheet type="text/css" href="build/style.css" />
 </head>
 <body>
-
     <!-- DARK MODE SWITCH -->
     <div class="switchWrapper">
-        <input id="switch" type="checkbox" hidden />
+        <input id="switch" type="checkbox" hidden aria-label="Toggle dark mode" />
         <label for="switch" class="switch"></label>
     </div>
 
@@ -38,17 +40,15 @@
         <h1 class="title">Error <b>404</b></h1>
     </div>
 
-    <!-- SOCIAL LINKS -->
-    <div class="contentBottom">
-        <a class="link" href="/" aria-label="Return to homepage"><span class="icon-home"></span></a>
+    <!-- REDIRECT TEXT -->
+    <div class="contentBottom" style="text-align: center;">
+        <p>Redirecting in <b id="redirectNum">11</b><br>
+            <b style="font-weight: normal;font-size: 0.7em">If redirecting fails, click <a href="/" style="color: #0077cc">here</a>.
+        </p>
     </div>
 
-    <!-- DARK MODE JS -->
-    <script>
-        const hour = new Date().getHours(); (hour > 18 || hour < 7) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light');
-        document.getElementById("switch").checked = (document.documentElement.getAttribute("data-theme") == "dark");
-        document.getElementById("switch").addEventListener("change", e => (e.target.checked) ? document.documentElement.setAttribute('data-theme','dark') : document.documentElement.setAttribute('data-theme','light') );
-    </script>
-
+    <!-- JS -->
+    <script src="./build/darkmode.js" async></script>
+    <script src="./build/redirect.js" async></script>
 </body>
 </html>
