@@ -92,7 +92,7 @@ html[data-theme="dark"]{
     outline: 1px solid transparent
 }
 
-.contentBottom a i{
+.contentBottom a i, .contentBottom p{
     color: var(--black);
     -webkit-transition: color .2s ease-in-out;
          -o-transition: color .2s ease-in-out;
