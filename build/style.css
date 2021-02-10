@@ -12,7 +12,6 @@ html {
     padding: 0 !important;
     position: fixed;
     overflow: hidden;
-    overscroll-behavior-y: none;
     background-color: var(--white);
     -webkit-transition: background-color .5s;
          -o-transition: background-color .5s;
