@@ -1,4 +1,4 @@
-/* -------------- RESET -------------- */
+a/* -------------- RESET -------------- */
 
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
@@ -21,12 +21,14 @@ html {
 
 html[data-theme="light"]{
     --black: #000;
+	--lightgrey: rgb(102, 102, 102);
     --white: #fff;
     font-weight: normal;
 }
 
 html[data-theme="dark"]{
     --black: #e6e6e6;
+	--lightgrey: rgb(153, 153, 153);
     --white: #202020;
     font-weight: lighter;
 }
@@ -206,15 +208,69 @@ input:checked + .switch:active:before {
             transform: translate3d(100%, -50%, 0) scale(3);
 }
 
-.swichPrompt{
-    width: 200px;
-    position: relative;
-    right: 200px;
+.swichPrompt {
+	width: 187px;
+    position: absolute;
+	top: 43px;
+	right: 18px;
+    padding: 10px;
+	color: var(--lightgrey);
+    background-color: var(--white);
+    font: normal 12px "Segoe UI", Arial, Sans-serif;
+    border-radius: 5px;
+    border: 1px solid var(--lightgrey);
+	transition: border-color .5s, color .5s, background-color .5s, opacity .5s;
+}
+
+.swichPrompt.clicked{
+	opacity: 0
+}
+
+.swichPrompt:before,
+.swichPrompt:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    top: -12px;
+    right: 4px;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: solid 13px transparent;
+    border-top: 0;
+    border-bottom-color: var(--white);
+	transition: border-bottom-color .5s;
+}
+
+.swichPrompt::before {
+    top: -13.5px;
+    z-index: 1;
+    border-bottom-color: var(--lightgrey);
+	transition: border-bottom-color .5s;
+}
+
+.swichPrompt .switchButton,
+.swichPrompt .switchButton:active,
+.swichPrompt .switchButton:focus{
+	transition: color .5s, background .5s;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-decoration: underline;
+	padding: 3px 5px;
+	color: var(--black);
+	background: var(--white)
+}
+
+.swichPrompt .instructions{
+	margin-top: 3px;
+	margin-left: 9px;
 }
 
 /* -------------- RESPONSIVE DESIGN -------------- */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .contentCenter{
         width: 250px;
     }

@@ -14,9 +14,9 @@ body.getAttribute("data-theme") == "dark" ? chkbox.click() : "";
 
 document.querySelector("#prompt").addEventListener("click", d => {
     //auto set based on time
-    if(!navigator.geolocation) location_fb();
-    else {
+    if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(d => {
+			document.querySelector(".swichPrompt").classList.add("clicked");
             fetch(`https://api.sunrise-sunset.org/json?lat=${d.coords.latitude}&lng=${d.coords.longitude}&date=today&formatted=0`)
             .then(r => r.json())
             .then(d => { 
@@ -26,11 +26,11 @@ document.querySelector("#prompt").addEventListener("click", d => {
             })
             .catch( e => location_fb(e));
         }, e => location_fb(e));
-    }
+	}
 });
 
 //fallback fn for auto set dark mode
 const location_fb = (e) => {
-    (hour > 18 || hour < 7) && (!chkbox.checked) ? chkbox.click() : "";
+	document.querySelector(".swichPrompt").classList.add("clicked");
     console.warn("Error fetching sunrise/sunset times. Details: ", e)
 }
