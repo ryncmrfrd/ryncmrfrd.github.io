@@ -10,7 +10,9 @@ html {
     width: 100vw !important;
     margin: 0  !important;
     padding: 0 !important;
+    position: fixed;
     overflow: hidden;
+    overscroll-behavior-y: none;
     background-color: var(--white);
     -webkit-transition: background-color .5s;
          -o-transition: background-color .5s;
@@ -86,6 +88,7 @@ html[data-theme="dark"]{
 
 .contentBottom a{
     text-decoration: none;
+    color: black;
 }
 
 .contentBottom a:focus{
@@ -205,12 +208,24 @@ input:checked + .switch:active:before {
 
 /* -------------- RESPONSIVE DESIGN -------------- */
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 400px) {
     .contentCenter{
         width: 250px;
     }
 
     .contentCenter .title {
         white-space: normal;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .contentBottom{
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .contentCenter{
+        width: calc(100% - 10px)
     }
 }
