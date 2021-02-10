@@ -12,20 +12,22 @@ chkbox.addEventListener("change", e => {
 //set switch based on data-theme
 body.getAttribute("data-theme") == "dark" ? chkbox.click() : "";
 
-//auto set based on time
-if(!navigator.geolocation) location_fb();
-else {
-    navigator.geolocation.getCurrentPosition(d => {
-        fetch(`https://api.sunrise-sunset.org/json?lat=${d.coords.latitude}&lng=${d.coords.longitude}&date=today&formatted=0`)
-        .then(r => r.json())
-        .then(d => { 
-            let hour_srse = new Date(Date.parse(d.results.sunrise)).getHours(),
-                hour_sset = new Date(Date.parse(d.results.sunset)).getHours();
-            (hour > hour_sset || hour < hour_srse) && (!chkbox.checked) ? chkbox.click() : "";
-        })
-        .catch( e => location_fb(e));
-    }, e => location_fb(e));
-}
+document.querySelector("#prompt").addEventListener("click", d => {
+    //auto set based on time
+    if(!navigator.geolocation) location_fb();
+    else {
+        navigator.geolocation.getCurrentPosition(d => {
+            fetch(`https://api.sunrise-sunset.org/json?lat=${d.coords.latitude}&lng=${d.coords.longitude}&date=today&formatted=0`)
+            .then(r => r.json())
+            .then(d => { 
+                let hour_srse = new Date(Date.parse(d.results.sunrise)).getHours(),
+                    hour_sset = new Date(Date.parse(d.results.sunset)).getHours();
+                (hour > hour_sset || hour < hour_srse) && (!chkbox.checked) ? chkbox.click() : "";
+            })
+            .catch( e => location_fb(e));
+        }, e => location_fb(e));
+    }
+});
 
 //fallback fn for auto set dark mode
 const location_fb = (e) => {

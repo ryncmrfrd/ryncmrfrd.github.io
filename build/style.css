@@ -132,6 +132,7 @@ html[data-theme="dark"]{
     position: absolute;
     right: 10px;
     top: 10px;
+    width: 48px;
 }
 
 .switch {
@@ -203,6 +204,12 @@ input:checked + .switch:active:before {
     background: rgba(59, 59, 59, 0.075);
     -webkit-transform: translate3d(100%, -50%, 0) scale(3);
             transform: translate3d(100%, -50%, 0) scale(3);
+}
+
+.swichPrompt{
+    width: 200px;
+    position: relative;
+    right: 200px;
 }
 
 /* -------------- RESPONSIVE DESIGN -------------- */
