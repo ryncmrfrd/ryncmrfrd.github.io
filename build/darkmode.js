@@ -5,7 +5,7 @@ var body = document.documentElement,
 //handle switch changes
 chkbox.addEventListener("change", e => {
     e.target.checked ? 
-        body.setAttribute('data-theme','dark') : 
+        body.setAttribute('data-theme','dark') :
         body.setAttribute('data-theme','light');
 });
 
